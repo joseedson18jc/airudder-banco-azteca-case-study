@@ -20,7 +20,7 @@
  --warn Cons/orange (Zenvia bucket)
  --grid / --navy-mid Chart utilities
  --brand-meta-bg / --brand-ebanx Vendor partners (scoped)
- --baz-green / --baz-green-light / Banco Azteca logo (scoped)
+ --baz-green / --baz-green-light / Logo do Banco Azteca (scoped)
  --baz-gold
  --surface-card / --surface-card-2 / Theme-aware card surfaces
  --surface-elevated (auto-flip in dark mode)
@@ -109,7 +109,7 @@
  7. LOCALE
  - Document is PT-BR (pt-BR lang attribute)
  - Decimal separator: comma (e.g., "71,4%")
- - Thousands separator: period (e.g., "28.450")
+ - Milhares separator: period (e.g., "28.450")
  - Anglicisms intentionally kept: "Time-to-value", "ICP", "ROI",
  "touchpoints" (brand voice convention — tech anchors)
 
@@ -177,7 +177,7 @@
  tokens — PDFs always render light-mode regardless of viewing theme.
 
  13. SALES OPS · PERSONALIZATION + TRACKING
- ---------- Prospect personalization banner ----------
+ ---------- Personalização do prospect banner ----------
  URL params (all optional) populate a dark banner ABOVE the sticky header:
  ?prospect=Banco%20XPTO → "Preparado para Banco XPTO"
  ?prepared_by=Jos%C3%A9 → adds "por José"
@@ -219,7 +219,7 @@
  and CRMs. Update datePublished/dateModified per revision.
 
  14. CONVERSION SURFACE (added in round 7)
- ---------- Interactive ROI calculator ----------
+ ---------- Interactive Calculadora de ROI ----------
  <section id="section-roi"> · 4 sliders (carteira, tentativas, custo,
  recuperação) drive a live computation panel. Math premises in code:
  AI_COST = R$ 0,55/call
@@ -257,7 +257,7 @@
  <details class="tmpl-widget"> in footer · clone-and-rebrand UI.
  11 form fields capture company name, geography, customer base,
  headcount, before/after metrics (formatted + short), scale multiplier,
- ROI claim, and AE email. On "Gerar HTML":
+ ROI claim, and Email do AE responsável. On "Gerar HTML":
  1. document.documentElement.cloneNode(true)
  2. strip transient state (active panels, persona banner data)
  3. regex-replace key strings (longer-first to avoid partial matches)
@@ -333,14 +333,14 @@
  air:track CustomEvent + window.dataLayer.push
 ================================================================================
 -->
-<html lang="en">
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#024F94">
 <meta name="color-scheme" content="light">
-<title>AI Rudder × Banco Azteca — How a collections operation became a 17× bigger engine</title>
-<meta name="description" content="Premium case study: AI Rudder + Banco Azteca — from 28,450 to 500,000+ daily calls, 100K+ users reached/day, 4× conversion ROI. Adapted for the Brazilian market.">
+<title>AI Rudder × Banco Azteca — Como uma operação de cobrança virou um motor 17× maior</title>
+<meta name="description" content="Premium case study: AI Rudder + Banco Azteca — from 28.450 to 500.000+ daily calls, 100K+ users reached/day, 4× conversion ROI. Adapted for the Brazilian market.">
 <meta name="author" content="AI Rudder LATAM">
 <meta name="generator" content="EN translation generated from index.html (zh-CN master)">
 <meta name="robots" content="noindex, nofollow"><!-- 内部销售资产 -->
@@ -348,18 +348,18 @@
 <!-- Open Graph — social/messaging previews (Slack, Teams, WhatsApp, LinkedIn) -->
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI Rudder">
-<meta property="og:locale" content="en_US">
-<meta property="og:title" content="AI Rudder × Banco Azteca · from 28K to 500K+ daily calls">
-<meta property="og:description" content="How AI Voice Agent + automated SMS transformed a manual collections operation into an elastic engine 17× larger — with 4× conversion ROI. Replicable thesis for Brazil.">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="AI Rudder × Banco Azteca · de 28K para 500K+ chamadas/dia">
+<meta property="og:description" content="Como o AI Voice Agent + SMS automatizado transformou uma operação manual de cobrança em um motor elástico 17× maior — com 4× ROI de conversão. Tese replicável para o Brasil.">
 <meta property="og:image" content="https://airudder.com/case-studies/banco-azteca/og-cover.png"><!-- TODO: 共享前请将 OG Hero图传至此 URL -->
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="AI Rudder × Banco Azteca — premium case study · 17× scale">
+<meta property="og:image:alt" content="AI Rudder × Banco Azteca — case study premium · escala 17×">
 
 <!-- Twitter / X 卡片 -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI Rudder × Banco Azteca · 17× scale">
-<meta name="twitter:description" content="From 28K to 500K+ daily calls. 4× ROI. Replicable thesis for Brazil — PT-BR version, LGPD-compliant.">
+<meta name="twitter:title" content="AI Rudder × Banco Azteca · escala 17×">
+<meta name="twitter:description" content="De 28K para 500K+ chamadas/dia. 4× ROI. Tese replicável para o Brasil — em PT-BR, aderente a LGPD.">
 <meta name="twitter:image" content="https://airudder.com/case-studies/banco-azteca/og-cover.png">
 
 <!-- JSON-LD structured data — helps internal sales-asset crawlers + CRMs index this doc -->
@@ -370,10 +370,10 @@
  {
  "@type": "Article",
  "@id": "https://airudder.com/case-studies/banco-azteca#article",
- "headline": "AI Rudder × Banco Azteca — How a collections operation became a 17× bigger engine",
- "alternativeHeadline": "From 28,450 to 500,000+ daily calls · 4× conversion ROI",
- "description": "Premium case study: AI Rudder + Banco Azteca — from 28,450 to 500,000+ daily calls, 100K+ users reached per day, 4× conversion ROI. Adapted to the Brazilian market.",
- "inLanguage": "en",
+ "headline": "AI Rudder × Banco Azteca — Como uma operação de cobrança virou um motor 17× maior",
+ "alternativeHeadline": "De 28.450 para 500.000+ chamadas/dia · 4× ROI de conversão",
+ "description": "Case study premium: AI Rudder + Banco Azteca — de 28.450 para 500.000+ chamadas/dia, 100K+ usuários alcançados/dia, 4× ROI de conversão. Adaptado ao mercado brasileiro.",
+ "inLanguage": "pt-BR",
  "datePublished": "2026-01-15",
  "dateModified": "2026-05-15",
  "image": {
@@ -398,15 +398,15 @@
  },
  "about": [
  {"@type": "Thing", "name": "AI Voice Agent"},
- {"@type": "Thing", "name": "Automated collections"},
- {"@type": "Thing", "name": "Conversational AI"},
+ {"@type": "Thing", "name": "Cobrança automatizada"},
+ {"@type": "Thing", "name": "IA conversacional"},
  {"@type": "Thing", "name": "Banking outbound"}
  ],
  "mentions": [
  {"@type": "Organization", "name": "Banco Azteca", "sameAs": "https://www.bancoazteca.com.mx"},
  {"@type": "Organization", "name": "Grupo Elektra"}
  ],
- "keywords": "AI Voice Agent, collections, LATAM, Brazil, LGPD, WhatsApp Business, AI Rudder, Banco Azteca, banking, fintech, BPO"
+ "keywords": "AI Voice Agent, cobrança, collections, LATAM, Brasil, LGPD, WhatsApp Business, AI Rudder, Banco Azteca, banking, fintech, BPOs"
  },
  {
  "@type": "Organization",
@@ -418,7 +418,7 @@
  "https://www.linkedin.com/company/ai-rudder",
  "https://twitter.com/airudder"
  ],
- "description": "Conversational AI platform for collections, telemarketing and customer service — built for LATAM and APAC banks, fintechs, and BPOs."
+ "description": "Plataforma de IA conversacional para cobrança, telemarketing e atendimento — feita para bancos, fintechs e BPOss em LATAM e APAC."
  },
  {
  "@type": "CreativeWork",
@@ -428,7 +428,7 @@
  "about": {"@type": "Organization", "name": "Banco Azteca"},
  "audience": {
  "@type": "BusinessAudience",
- "audienceType": "Brazilian Tier-1 banks, fintechs, BPOs, telcos, retail with credit operations"
+ "audienceType": "Bancos Tier-1, fintechs, BPOss, telecom e varejo com operação de crédito no Brasil"
  }
  }
  ]
@@ -580,7 +580,7 @@
 [data-theme="dark"].back-top{background:var(--surface-card-2);border-color:rgba(255,255,255,.12)}
 [data-theme="dark"].back-top:hover{background:var(--teal-deep);color:var(--navy-ink)}
 
-/* Banco Azteca logo: keep the brand green pill consistent in both themes */
+/* Logo do Banco Azteca: keep the brand green pill consistent in both themes */
 [data-theme="dark"].baz-logo{box-shadow:0 2px 6px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.12)}
 
 /* Pull-quote watermark glow softer */
@@ -1669,7 +1669,7 @@ html[data-variant="B"] [data-variant-show="A"]{display:none}
 a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-visible,.bar-int:focus-visible,.bar-fit-group:focus-visible,.r-player:focus-visible,.r-tog:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:3px}
 .cta-btn:focus-visible{outline:2px solid var(--teal);outline-offset:4px}
 .donut-seg:focus-visible,.bar-int:focus-visible,.bar-fit:focus-visible{outline-offset:1px;outline-style:dashed}
-/* Skip "outline" on the AI Rudder logo + Banco Azteca logo wrappers — purely decorative */
+/* Skip "outline" on the AI Rudder logo + Logo do Banco Azteca wrappers — purely decorative */
 .ar-logo,.baz-logo{outline:none!important}
 </style>
 </head>
@@ -1694,7 +1694,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  }catch(e){d.setAttribute('data-variant','A');}
  // Language preference (default zh-CN for this translated build)
  try{
- var lp='en';
+ var lp='pt-BR';
  d.setAttribute('lang', lp);
  }catch(e){}
  // Add transition class AFTER first paint so the initial theme doesn't animate
@@ -1707,18 +1707,18 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  });
  })();
 </script>
-<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Skip to content</a>
+<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Pular para o conteúdo</a>
 
-<!-- Prospect personalization横幅 · 通过 URL 参数激活:
- ?prospect=XPTO%20Banks → "Prepared for XPTO Bank"
- ?prepared_by=张三 → 添加 "by Zhang San"
- ?date=2026-05-20 → 添加 "· May 20, 2026"
- All three are optional. Banner hides if none provided. -->
-<div class="persona-banner" id="personaBanner" role="region" aria-label="Prospect personalization">
+<!-- Personalização do prospect横幅 · 通过 URL 参数激活:
+ ?prospect=XPTO%20Banks → "Preparado para Banco XPTO"
+ ?prepared_by=张三 → 添加 "por José"
+ ?date=2026-05-20 → 添加 "· 20 de maio de 2026"
+ Todos são opcionais. O banner fica oculto se nenhum for fornecido. -->
+<div class="persona-banner" id="personaBanner" role="region" aria-label="Personalização do prospect">
  <div class="persona-banner__in">
- <span class="persona-banner__tag" data-i18n="persona.prepared_for">Prepared for</span>
+ <span class="persona-banner__tag" data-i18n="persona.prepared_for">Preparado para</span>
  <span class="persona-banner__copy" id="personaCopy"></span>
- <button class="persona-banner__close" id="personaClose" type="button" aria-label="Close personalization banner" title="Close">×</button>
+ <button class="persona-banner__close" id="personaFechar" type="button" aria-label="Fechar banner de personalização" title="Fechar">×</button>
  </div>
 </div>
 
@@ -1744,7 +1744,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
 
  <!-- TOC chip · scrollspy current-section indicator + dropdown menu -->
  <div class="toc-chip-wrap">
- <button class="toc-chip" id="tocChip" type="button" aria-expanded="false" aria-haspopup="menu" aria-controls="tocMenu" aria-label="Section navigation" data-track="nav.toc_open">
+ <button class="toc-chip" id="tocChip" type="button" aria-expanded="false" aria-haspopup="menu" aria-controls="tocMenu" aria-label="Navegação por seções" data-track="nav.toc_open">
  <span class="toc-chip__num" id="tocChipNum">01</span>
  <span class="toc-chip__name" id="tocChipName">Hero</span>
  <span class="toc-chip__caret" aria-hidden="true">▾</span>
@@ -1753,37 +1753,37 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <li role="none"><a role="menuitem" href="#section-hero" data-toc="section-hero"><span class="toc-num">01</span><span>Hero</span></a></li>
  <li role="none"><a role="menuitem" href="#section-outcomes" data-toc="section-outcomes"><span class="toc-num">02</span><span>Headline outcomes</span></a></li>
  <li role="none"><a role="menuitem" href="#section-snapshot" data-toc="section-snapshot"><span class="toc-num">03</span><span>Snapshot</span></a></li>
- <li role="none"><a role="menuitem" href="#section-challenge" data-toc="section-challenge"><span class="toc-num">04</span><span>The challenge</span></a></li>
- <li role="none"><a role="menuitem" href="#section-pull" data-toc="section-pull"><span class="toc-num">05</span><span>Central thesis</span></a></li>
- <li role="none"><a role="menuitem" href="#section-solution" data-toc="section-solution"><span class="toc-num">06</span><span>The solution</span></a></li>
- <li role="none"><a role="menuitem" href="#section-results" data-toc="section-results"><span class="toc-num">07</span><span>Results</span></a></li>
- <li role="none"><a role="menuitem" href="#section-brazil" data-toc="section-brazil"><span class="toc-num">08</span><span>Brazil · Proof point</span></a></li>
- <li role="none"><a role="menuitem" href="#radarSection" data-toc="radarSection"><span class="toc-num">09</span><span>Positioning</span></a></li>
- <li role="none"><a role="menuitem" href="#section-roi" data-toc="section-roi"><span class="toc-num">10</span><span>ROI calculator</span></a></li>
+ <li role="none"><a role="menuitem" href="#section-challenge" data-toc="section-challenge"><span class="toc-num">04</span><span>O desafio</span></a></li>
+ <li role="none"><a role="menuitem" href="#section-pull" data-toc="section-pull"><span class="toc-num">05</span><span>Tese central</span></a></li>
+ <li role="none"><a role="menuitem" href="#section-solution" data-toc="section-solution"><span class="toc-num">06</span><span>A solução</span></a></li>
+ <li role="none"><a role="menuitem" href="#section-results" data-toc="section-results"><span class="toc-num">07</span><span>Resultados</span></a></li>
+ <li role="none"><a role="menuitem" href="#section-brazil" data-toc="section-brazil"><span class="toc-num">08</span><span>Brasil · Proof point</span></a></li>
+ <li role="none"><a role="menuitem" href="#radarSection" data-toc="radarSection"><span class="toc-num">09</span><span>Posicionamento</span></a></li>
+ <li role="none"><a role="menuitem" href="#section-roi" data-toc="section-roi"><span class="toc-num">10</span><span>Calculadora de ROI</span></a></li>
  <li role="none"><a role="menuitem" href="#section-faq" data-toc="section-faq"><span class="toc-num">11</span><span>FAQ</span></a></li>
- <li role="none"><a role="menuitem" href="#section-cta" data-toc="section-cta"><span class="toc-num">12</span><span>Next steps</span></a></li>
+ <li role="none"><a role="menuitem" href="#section-cta" data-toc="section-cta"><span class="toc-num">12</span><span>Próximos passos</span></a></li>
  </ul>
  </div>
 
  <!-- Action cluster · Lang · PDF · Share · Theme · LIVE indicator -->
  <div class="nav-actions">
- <div class="lang-chip" role="group" aria-label="Document language">
+ <div class="lang-chip" role="group" aria-label="Idioma do documento">
  <a class="lang-chip__btn" id="langZH" href="./index.html" aria-pressed="false" data-lang="zh-CN" data-track="nav.lang_toggle">中</a>
- <a class="lang-chip__btn" id="langPT" href="./index.pt.html" aria-pressed="false" data-lang="pt-BR" data-track="nav.lang_toggle">PT</a>
- <button class="lang-chip__btn" id="langEN" type="button" aria-pressed="true" data-lang="en" data-track="nav.lang_toggle">EN</button>
+ <button class="lang-chip__btn" id="langPT" type="button" aria-pressed="true" data-lang="pt-BR" data-track="nav.lang_toggle">PT</button>
+ <a class="lang-chip__btn" id="langEN" href="./index.en.html" aria-pressed="false" data-lang="en" data-track="nav.lang_toggle">EN</a>
  </div>
- <button class="nav-btn" id="btnDownload" type="button" aria-label="Download as PDF" title="Download as PDF (Ctrl/Cmd+P)" data-track="nav.download_pdf" data-i18n-aria-label="nav.download_aria" data-i18n-title="nav.download_title">
+ <button class="nav-btn" id="btnDownload" type="button" aria-label="Baixar como PDF" title="Baixar como PDF (Ctrl/Cmd+P)" data-track="nav.download_pdf" data-i18n-aria-label="nav.download_aria" data-i18n-title="nav.download_title">
  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
  <path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/>
  </svg>
  </button>
- <a class="nav-btn" id="btnShare" href="mailto:?subject=AI%20Rudder%20%C3%97%20Banco%20Azteca%20%E2%80%94%20Case%20study%20premium&body=Achei%20esse%20case%20study%20bem%20relevante%20%E2%80%94%20de%2028K%20para%20500K%2B%20chamadas%2Fdia%2C%208%C3%97%20ROI%20de%20convers%C3%A3o.%20Tese%20replic%C3%A1vel%20para%20o%20Brasil.%0D%0A%0D%0A" aria-label="Share via email" title="Share via email" data-track="nav.share_email">
+ <a class="nav-btn" id="btnShare" href="mailto:?subject=AI%20Rudder%20%C3%97%20Banco%20Azteca%20%E2%80%94%20Case%20study%20premium&body=Achei%20esse%20case%20study%20bem%20relevante%20%E2%80%94%20de%2028K%20para%20500K%2B%20chamadas%2Fdia%2C%208%C3%97%20ROI%20de%20convers%C3%A3o.%20Tese%20replic%C3%A1vel%20para%20o%20Brasil.%0D%0A%0D%0A" aria-label="Compartilhar por email" title="Compartilhar por email" data-track="nav.share_email">
  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
  <path d="M4 6h16v12H4z"/>
  <path d="M4 7l8 6 8-6"/>
  </svg>
  </a>
- <button class="nav-btn nav-btn--theme" id="btnTheme" type="button" aria-label="Toggle theme (light/dark)" aria-pressed="false" title="Toggle theme" data-track="nav.theme_toggle">
+ <button class="nav-btn nav-btn--theme" id="btnTheme" type="button" aria-label="Alternar tema (claro/escuro)" aria-pressed="false" title="Alternar tema" data-track="nav.theme_toggle">
  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
  <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
  </svg>
@@ -1793,9 +1793,9 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  </svg>
  </button>
  <div class="nav-meta">
- <span class="meta-live" title="In production · live deals across LATAM" data-i18n-title="nav.live_title"><span class="pulse"></span><span data-i18n="nav.live">LIVE</span></span>
- <span class="meta-views" id="metaViews" title="Views this week" data-i18n-title="nav.views_title"></span>
- <span class="meta-read" id="metaRead" title="Estimated reading time" data-i18n-title="nav.read_title"></span>
+ <span class="meta-live" title="Em produção · deals ativos no LATAM" data-i18n-title="nav.live_title"><span class="pulse"></span><span data-i18n="nav.live">LIVE</span></span>
+ <span class="meta-views" id="metaViews" title="Visualizações esta semana" data-i18n-title="nav.views_title"></span>
+ <span class="meta-read" id="metaRead" title="Tempo estimado de leitura" data-i18n-title="nav.read_title"></span>
  <span class="meta-region">LatAm · BR · MX</span>
  </div>
  </div>
@@ -1807,7 +1807,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
 <!-- ===== HERO ===== -->
 <section class="hero" id="section-hero" aria-labelledby="hero-headline">
  <div class="wrap">
- <div class="eyebrow" style="display:inline-flex;align-items:center;flex-wrap:wrap;gap:6px;row-gap:8px"><span class="dot"></span>AI Rudder × Banco Azteca · Case Study · 2026<span class="baz-logo baz-eyebrow" aria-label="Banco Azteca logo"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="#0A0A0A" stroke-width="1.5"/><circle cx="8" cy="8" r="3.6" fill="#D80027"/></svg><span class="baz-name">Banco Azteca</span></span></div>
+ <div class="eyebrow" style="display:inline-flex;align-items:center;flex-wrap:wrap;gap:6px;row-gap:8px"><span class="dot"></span>AI Rudder × Banco Azteca · Case Study · 2026<span class="baz-logo baz-eyebrow" aria-label="Logo do Banco Azteca"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="#0A0A0A" stroke-width="1.5"/><circle cx="8" cy="8" r="3.6" fill="#D80027"/></svg><span class="baz-name">Banco Azteca</span></span></div>
  <div class="hero-grid" style="margin-top:38px">
  <h1 id="hero-headline">
  From <span class="num">28K</span> to <span class="num glow">500K+</span><br>
@@ -1816,28 +1816,28 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <span class="it">17× larger.</span>
  </h1>
  <div class="hero-side">
- <p style="margin-bottom:14px">How AI Rudder's <strong>AI Voice Agent</strong> and automated SMS turned a manual credit-collections operation into a <strong>4× conversion-ROI</strong><a href="#claims-note" class="footnote-ref" aria-label="See metric source notes">*</a> engine for one of the largest retail banks in Latin America.</p>
- <p>The same playbook is replicable for Brazilian Tier-1 banks, fintechs, BPOs, telcos and retailers — in PT-BR, designed for LGPD alignment (subject to client legal validation), and ready to integrate with your dialer, CRM and WhatsApp Business.</p>
+ <p style="margin-bottom:14px">Como o <strong>AI Voice Agent</strong> + SMS automatizado da AI Rudder transformou uma operação manual de recuperação de crédito em <strong>4× ROI de conversão</strong><a href="#claims-note" class="footnote-ref" aria-label="Ver notas de origem das métricas">*</a> para um dos maiores bancos de varejo da América Latina.</p>
+ <p>A mesma tese é replicável para bancos Tier-1, fintechs, BPOss, telecom e varejo no Brasil — em PT-BR, desenhada para aderência a LGPD (sujeita à validação jurídica do cliente) e pronta para integrar com discador, CRM e WhatsApp Business.</p>
  </div>
  </div>
 
  <div class="hero-meta">
- <div class="item"><span class="hm-key">Client</span><span class="hm-val">Banco Azteca<span class="baz-logo baz-inline" aria-label="Banco Azteca logo"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="#0A0A0A" stroke-width="1.5"/><circle cx="8" cy="8" r="3.6" fill="#D80027"/></svg><span class="baz-name">Banco Azteca</span></span></span></div>
- <div class="item"><span class="hm-key">industry</span><span class="hm-val">Banking & Retail</span></div>
- <div class="item"><span class="hm-key">geography</span><span class="hm-val">Mexico · LatAm</span></div>
+ <div class="item"><span class="hm-key">Cliente</span><span class="hm-val">Banco Azteca<span class="baz-logo baz-inline" aria-label="Logo do Banco Azteca"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="#0A0A0A" stroke-width="1.5"/><circle cx="8" cy="8" r="3.6" fill="#D80027"/></svg><span class="baz-name">Banco Azteca</span></span></span></div>
+ <div class="item"><span class="hm-key">industry</span><span class="hm-val">Banking & Varejo</span></div>
+ <div class="item"><span class="hm-key">geography</span><span class="hm-val">México · LatAm</span></div>
  <div class="item"><span class="hm-key">customer base</span><span class="hm-val">2,000K+</span></div>
  <div class="item"><span class="hm-key">Headcount</span><span class="hm-val">4K+</span></div>
- <div class="item"><span class="hm-key">Product</span><span class="hm-val">AI Voice Agent + SMS</span></div>
+ <div class="item"><span class="hm-key">Produto</span><span class="hm-val">AI Voice Agent + SMS</span></div>
  </div>
  </div>
 </section>
 
 <!-- ===== TRUST BAR ===== -->
-<section class="trust-bar" id="section-trust" aria-label="Compliance & institutional partners">
+<section class="trust-bar" id="section-trust" aria-label="Compliance e parceiros institucionais">
  <div class="wrap trust-in">
  <div class="trust-label">
  <span class="ampersand">&amp;</span>
- Audited, regulated,<br>integrable at global scale
+ Auditados, regulados,<br>integráveis em escala global
  </div>
  <div class="badge-row">
  <!-- Meta Business Partner — official badge style (light pill, brand-accurate infinity mark) -->
@@ -1873,8 +1873,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <span class="tb-lbl"><b>Meta</b><small>Business Partner</small></span>
  </div>
 
- <!-- Pix (Brazilian instant payment)-->
- <div class="tb-pill tb-pix" aria-label="Pix instant payment">
+ <!-- Pix (pagamento instantâneo brasileiro)-->
+ <div class="tb-pill tb-pix" aria-label="Pix · pagamento instantâneo">
  <span class="tb-mark">
  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
  <defs>
@@ -1890,14 +1890,14 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <span class="tb-lbl">Pix<small>BCB · INSTANT</small></span>
  </div>
 
- <!-- Ebanx — LatAm payments -->
- <div class="tb-pill tb-ebanx" aria-label="Ebanx LatAm payments">
+ <!-- Ebanx — pagamentos LatAm -->
+ <div class="tb-pill tb-ebanx" aria-label="Ebanx · pagamentos LatAm">
  <span class="tb-mark"><span class="e-glyph">e</span></span>
  <span class="tb-lbl">LATAM<small>PAYMENTS</small></span>
  </div>
 
  <!-- ISO 27001 -->
- <div class="tb-pill tb-compliance" aria-label="ISO 27001 — Info security">
+ <div class="tb-pill tb-compliance" aria-label="ISO 27001 — Segurança da info">
  <span class="tb-mark">
  <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
  <defs><linearGradient id="isoG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0668c0"/><stop offset="100%" stop-color="#024F94"/></linearGradient></defs>
@@ -1908,7 +1908,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <text x="20" y="28" text-anchor="middle" font-family="JetBrains Mono,Noto Sans SC,monospace" font-weight="700" font-size="6" fill="url(#isoG)" letter-spacing=".5">27001</text>
  </svg>
  </span>
- <span class="tb-lbl">ISO 27001<small>Info security</small></span>
+ <span class="tb-lbl">ISO 27001<small>Segurança da info</small></span>
  </div>
 
  <!-- SOC 2 Type II -->
@@ -1928,7 +1928,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  </div>
 
  <!-- GDPR · EU -->
- <div class="tb-pill tb-compliance" aria-label="GDPR — EU data protection">
+ <div class="tb-pill tb-compliance" aria-label="GDPR — Proteção de dados UE">
  <span class="tb-mark">
  <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
  <defs><radialGradient id="euG" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#003399"/><stop offset="100%" stop-color="#002266"/></radialGradient></defs>
@@ -1946,7 +1946,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  </div>
 
  <!-- PDPA -->
- <div class="tb-pill tb-compliance" aria-label="PDPA — APAC data protection">
+ <div class="tb-pill tb-compliance" aria-label="PDPA — Proteção de dados APAC">
  <span class="tb-mark">
  <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
  <defs><linearGradient id="pdpaG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0668c0"/><stop offset="100%" stop-color="#012E58"/></linearGradient></defs>
@@ -1960,8 +1960,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <span class="tb-lbl">PDPA<small>APAC</small></span>
  </div>
 
- <!-- IMDA Singapore -->
- <div class="tb-pill tb-compliance" aria-label="IMDA Singapore">
+ <!-- IMDA Singapura -->
+ <div class="tb-pill tb-compliance" aria-label="IMDA Singapura">
  <span class="tb-mark">
  <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
  <defs><linearGradient id="imdaG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#E91E63"/><stop offset="100%" stop-color="#9C0E47"/></linearGradient></defs>
@@ -1971,7 +1971,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <rect x="30" y="11" width="4" height="18" fill="url(#imdaG)" rx="1" opacity=".55"/>
  </svg>
  </span>
- <span class="tb-lbl">IMDA<small>Singapore</small></span>
+ <span class="tb-lbl">IMDA<small>Singapura</small></span>
  </div>
 
  <!-- CSA AI Trust -->
@@ -2002,27 +2002,27 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <div class="sec-num">01</div>
  <div>
  <div class="eyebrow" style="margin-bottom:18px"><span class="dot"></span>Headline outcomes</div>
- <h2>The numbers that <span class="it">reshaped</span> the collections operation.</h2>
+ <h2>Os números que <span class="it">redesenharam</span> a operação de recuperação.</h2>
  </div>
  </div>
  <div class="outcome-grid">
- <div class="outcome" data-revealed="false" data-tip-num="500,000+" data-tip-lbl="Calls / day" data-tip-body="Daily automated call capacity — vs. ~28,450 calls/day at the manual baseline.">
+ <div class="outcome" data-revealed="false" data-tip-num="500.000+" data-tip-lbl="Chamadas / dia" data-tip-body="Capacidade automatizada diária — vs. ~28.450 chamadas/dia no baseline manual.">
  <div class="marker">001</div>
- <div class="big copyable" tabindex="0" role="button" data-copy="500,000+ calls/day" data-track="metric.copy" aria-label="Copy: 500,000+ calls/day"><span class="num-pop">500K</span><sup>+</sup></div>
+ <div class="big copyable" tabindex="0" role="button" data-copy="500.000+ chamadas/dia" data-track="metric.copy" aria-label="Copiar: 500.000+ chamadas/dia"><span class="num-pop">500K</span><sup>+</sup></div>
  <div class="outcome-lbl">automated collection calls/day</div>
- <div class="src">vs. 28,450 baseline · click for details</div>
+ <div class="src">vs. 28.450 baseline · clique para detalhes</div>
  </div>
- <div class="outcome" data-revealed="false" data-tip-num="100,000+" data-tip-lbl="Users / day" data-tip-body="Daily effective coverage of the delinquent base — previously bounded by human capacity.">
+ <div class="outcome" data-revealed="false" data-tip-num="100.000+" data-tip-lbl="Usuários / dia" data-tip-body="Cobertura efetiva da base inadimplente alcançada diariamente — antes restrita pela capacidade humana.">
  <div class="marker">002</div>
- <div class="big copyable" tabindex="0" role="button" data-copy="100,000+ users/day" data-track="metric.copy" aria-label="Copy: 100,000+ users reached/day"><span class="num-pop">100K</span><sup>+</sup></div>
+ <div class="big copyable" tabindex="0" role="button" data-copy="100.000+ usuários/dia" data-track="metric.copy" aria-label="Copiar: 100.000+ usuários alcançados/dia"><span class="num-pop">100K</span><sup>+</sup></div>
  <div class="outcome-lbl">unique users reached/day (base coverage)</div>
- <div class="src">delinquent base coverage</div>
+ <div class="src">cobertura da base inadimplente</div>
  </div>
- <div class="outcome" data-revealed="false" data-tip-num="4×" data-tip-lbl="ROI multiplier" data-tip-body="Effective recovery 4× higher than the manual baseline — measured within the same delinquency cohort window.">
+ <div class="outcome" data-revealed="false" data-tip-num="4×" data-tip-lbl="Multiplicador de ROI" data-tip-body="Recuperação efetiva 4× superior ao processo manual de baseline — medida na mesma janela de safra de inadimplência.">
  <div class="marker">003</div>
- <div class="big copyable" tabindex="0" role="button" data-copy="4× conversion ROI vs. manual baseline" data-track="metric.copy" aria-label="Copy: 4× conversion ROI"><span class="num-pop">4×</span><a href="#claims-note" class="footnote-ref" aria-label="See metric source notes">*</a></div>
- <div class="outcome-lbl">conversion ROI vs. manual baseline</div>
- <div class="src">effective recovery · see notes</div>
+ <div class="big copyable" tabindex="0" role="button" data-copy="4× ROI de conversão vs. baseline manual" data-track="metric.copy" aria-label="Copiar: 4× ROI de conversão"><span class="num-pop">4×</span><a href="#claims-note" class="footnote-ref" aria-label="Ver notas de origem das métricas">*</a></div>
+ <div class="outcome-lbl">ROI de conversão vs. baseline manual</div>
+ <div class="src">recuperação efetiva · ver notas</div>
  </div>
  </div>
  </div>
@@ -2035,45 +2035,45 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <div class="snap-cell">
  <div class="snap-key">industry</div>
  <div class="snap-val">Banking</div>
- <span class="snap-sub">+ integrated retail (Grupo Elektra)</span>
+ <span class="snap-sub">+ retail integrado (Grupo Elektra)</span>
  </div>
  <div class="snap-cell">
- <div class="snap-key">daily touchpoints</div>
+ <div class="snap-key">toques diários</div>
  <div class="snap-val">350K+</div>
- <span class="snap-sub">voice + SMS orchestrated</span>
+ <span class="snap-sub">voz + SMS orquestrados</span>
  </div>
  <div class="snap-cell">
  <div class="snap-key">Time-to-value</div>
- <div class="snap-val">8–12 wk.</div>
- <span class="snap-sub">pilot: 1 flow · 1 channel · 1 KPI</span>
+ <div class="snap-val">8–12 sem.</div>
+ <span class="snap-sub">piloto: 1 fluxo · 1 canal · 1 KPI</span>
  </div>
  <div class="snap-cell">
- <div class="snap-key">Service points</div>
- <div class="snap-val">Thousands</div>
- <span class="snap-sub">physical + digital footprint · Grupo Elektra</span>
+ <div class="snap-key">Pontos de serviço</div>
+ <div class="snap-val">Milhares</div>
+ <span class="snap-sub">presença física + digital · Grupo Elektra</span>
  </div>
  </div>
  </div>
 </section>
 
 <!-- ===== CHALLENGE ===== -->
-<section class="content" id="section-challenge" aria-label="The challenge">
+<section class="content" id="section-challenge" aria-label="O desafio">
  <div class="wrap">
  <div class="cgrid">
  <div>
- <div class="eyebrow"><span class="dot"></span>02 · The challenge</div>
- <h2>A collections machine <span class="it">held hostage</span> by human labor.</h2>
+ <div class="eyebrow"><span class="dot"></span>02 · O desafio</div>
+ <h2>Uma máquina de cobrança <span class="it">refém</span> de mão de obra.</h2>
  </div>
  <div>
  <p class="lead dropcap" data-cap="L">ike many large LATAM lenders, Banco Azteca's collections operation was anchored in human agents, manual dialing and disconnected reminder flows. The result: rising unit cost, performance blind spots and a hard capacity ceiling — only a fraction of the delinquent customer base could be contacted per cycle.</p>
 
  <ul class="check-list" style="margin-top:32px">
- <li><span class="num">01</span><span class="body"><strong>Daily contact volume capped</strong> by the limits of a human outbound operation.</span></li>
- <li><span class="num">02</span><span class="body"><strong>Operational cost inflated</strong> by manual dialing and a massive outbound headcount.</span></li>
- <li><span class="num">03</span><span class="body"><strong>Limited base coverage</strong> — only part of the delinquent portfolio was worked per cycle.</span></li>
- <li><span class="num">04</span><span class="body"><strong>Inconsistent contact strategies</strong>, generating below-potential engagement.</span></li>
- <li><span class="num">05</span><span class="body"><strong>Little real-time visibility</strong> into recovery KPIs and ROI per campaign.</span></li>
- <li><span class="num">06</span><span class="body"><strong>Difficulty orchestrating</strong> voice + SMS in a coordinated way at scale.</span></li>
+ <li><span class="num">01</span><span class="body"><strong>Volumes diários inatingíveis</strong> pela capacidade da operação humana de outbound.</span></li>
+ <li><span class="num">02</span><span class="body"><strong>Custo operacional inflado</strong> por discagem manual e equipe gigante de outbound.</span></li>
+ <li><span class="num">03</span><span class="body"><strong>Cobertura de base limitada</strong> — apenas parte da carteira em atraso era trabalhada por ciclo.</span></li>
+ <li><span class="num">04</span><span class="body"><strong>Estratégias de contato inconsistentes</strong>, gerando engajamento abaixo do potencial.</span></li>
+ <li><span class="num">05</span><span class="body"><strong>Pouca visibilidade em tempo real</strong> sobre KPIs de recuperação e ROI por campanha.</span></li>
+ <li><span class="num">06</span><span class="body"><strong>Dificuldade de orquestrar</strong> voz + SMS de forma coordenada em massa.</span></li>
  </ul>
  </div>
  </div>
@@ -2081,23 +2081,23 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
 </section>
 
 <!-- ===== PULL QUOTE ===== -->
-<section class="pull" id="section-pull" aria-label="Central thesis">
+<section class="pull" id="section-pull" aria-label="Tese central">
  <div class="wrap">
- <q>The point wasn't to <span class="accent">automate the calls</span>. It was to trade a capacity ceiling for an elastic, measurable engine — one that's <span class="accent">auditable in real time.</span></q>
- <div class="attr">— Central thesis of this case · AI Rudder × Banco Azteca</div>
+ <q>O ponto não era apenas <span class="accent">automatizar ligações</span>. Era trocar um teto de capacidade por um motor elástico, mensurável e <span class="accent">auditável em tempo real.</span></q>
+ <div class="attr">— Tese central do caso · AI Rudder × Banco Azteca</div>
  </div>
 </section>
 
 <!-- ===== SOLUTION ===== -->
-<section class="content" id="section-solution" aria-label="The solution" style="border-top:1px solid var(--line-strong)">
+<section class="content" id="section-solution" aria-label="A solução" style="border-top:1px solid var(--line-strong)">
  <div class="wrap">
  <div class="cgrid">
  <div>
- <div class="eyebrow"><span class="dot"></span>03 · The solution</div>
- <h2>AI Voice Agent <span class="it">+</span> automated SMS, in a single orchestration.</h2>
+ <div class="eyebrow"><span class="dot"></span>03 · A solução</div>
+ <h2>AI Voice Agent <span class="it">+</span> SMS automatizado, em uma única orquestração.</h2>
  </div>
  <div>
- <p class="lead">Banco Azteca rolled out AI Rudder's <strong style="color:var(--navy)">AI Collections</strong> stack: predictive, context-aware voice outbound paired with automated SMS for an omnichannel reach. The platform replaced manual workflows with a scalable, compliant, high-recovery engine — capable of running <em>250,000+ calls and 100,000+ SMS per day</em>.</p>
+ <p class="lead">O Banco Azteca implementou o stack de <strong style="color:var(--navy)">AI Collections</strong> da AI Rudder: voz preditiva e contextual para outbound, combinada a SMS automatizado para um toque omnichannel. A plataforma substituiu o processo manual por um motor escalável, compliant e de alta recuperação — capaz de rodar <em>250.000+ chamadas e 100.000+ SMS por dia</em>.</p>
 
  <div class="products">
  <div class="prod">
@@ -2107,9 +2107,9 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <path d="M5 14v3a2 2 0 0 0 2 2h1v-7H7a2 2 0 0 0-2 2zM19 14v3a2 2 0 0 1-2 2h-1v-7h1a2 2 0 0 1 2 2z"/>
  </svg>
  </div>
- <div class="prod-tag">Product · 01</div>
+ <div class="prod-tag">Produto · 01</div>
  <h3>AI Voice Agent — Collections</h3>
- <p>Predictive contextual outbound: greeting, identification, negotiation logic, payment promise and escalation to a live human agent when needed.</p>
+ <p>Outbound preditivo e contextual: saudação, identificação, lógica de negociação, promessa de pagamento e escalation ao agente humano vivo quando necessário.</p>
  </div>
  <div class="prod">
  <div class="icon-tile">
@@ -2118,23 +2118,23 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <circle cx="19" cy="18" r="2"/>
  </svg>
  </div>
- <div class="prod-tag">Product · 02</div>
+ <div class="prod-tag">Produto · 02</div>
  <h3>AI Voice Agent — Telemarketing</h3>
- <p>The same voice engine adapted to active offers and reactivation flows — reusing trained dialogue, compliance scripts and CRM integrations from the collections operation.</p>
+ <p>O mesmo motor de voz adaptado a ofertas ativas e fluxos de reativação — reaproveitando diálogo treinado, scripts de compliance e integrações de CRM da operação de cobrança.</p>
  </div>
  </div>
 
  <!-- CHART: Channel Mix · INTERACTIVE -->
  <div class="chart-card" id="chartDonut" data-chart="donut">
  <div class="chart-head">
- <h3>Omnichannel engagement mix</h3>
- <span class="tag">Daily · 350K+ touchpoints · Interactive</span>
+ <h3>Mix de engajamento omnichannel</h3>
+ <span class="tag">Diário · 350K+ touchpoints · Interativo</span>
  </div>
- <div class="chart-sub">Hover or click each segment — voice and SMS orchestrated in a single engine.</div>
+ <div class="chart-sub">Passe o mouse ou clique em cada segmento — voz e SMS orquestrados em um único motor.</div>
 
  <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="donutTitle donutDesc" style="width:100%;height:auto">
- <title id="donutTitle">Omnichannel engagement mix — donut chart</title>
- <desc id="donutDesc">Daily distribution of 350,000 touchpoints: 250,000 voice calls (71.4%) and 100,000 SMS reminders (28.6%), orchestrated on a single platform.</desc>
+ <title id="donutTitle">Mix de engajamento omnichannel — donut chart</title>
+ <desc id="donutDesc">Distribuição diária de 350 mil touchpoints: 250 mil chamadas de voz (71,4%) e 100 mil lembretes SMS (28,6%), orquestrados em uma única plataforma.</desc>
  <defs>
  <linearGradient id="voiceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
  <stop offset="0%" stop-color="#024F94"/>
@@ -2146,57 +2146,57 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  </linearGradient>
  </defs>
  <g class="dn-donut" transform="translate(150,140)">
- <!-- Voice segment (71.4%) -->
- <path class="donut-seg" data-channel="voice" data-tip-num="250,000+" data-tip-lbl="Voice calls / day · 71.4%" data-tip-body="AI Voice Agent — predictive, context-aware outbound with negotiation logic and human escalation."
+ <!-- Voice segment (71,4%) -->
+ <path class="donut-seg" data-channel="voice" data-tip-num="250.000+" data-tip-lbl="Chamadas de voz / dia · 71,4%" data-tip-body="AI Voice Agent — outbound preditivo, contextual, com lógica de negociação e escalation a humano."
  d="M 0,-95 A 95,95 0 1,1 -92.65,21.4 L -68.27,15.77 A 70,70 0 1,0 0,-70 Z" fill="url(#voiceGrad)"/>
- <!-- SMS segment (28.6%) -->
- <path class="donut-seg" data-channel="sms" data-tip-num="100,000+" data-tip-lbl="SMS reminders / day · 28.6%" data-tip-body="Automated reminders synchronized with the voice queue, with structured opt-in/opt-out."
+ <!-- SMS segment (28,6%) -->
+ <path class="donut-seg" data-channel="sms" data-tip-num="100.000+" data-tip-lbl="Lembretes SMS / dia · 28,6%" data-tip-body="Lembretes automatizados sincronizados com a fila de voz, com opt-in/opt-out estruturado."
  d="M -92.65,21.4 A 95,95 0 0,1 0,-95 L 0,-70 A 70,70 0 0,0 -68.27,15.77 Z" fill="url(#smsGrad)"/>
  <circle r="62" fill="#fff"/>
  <text id="donutCenterNum" class="donut-center-num" text-anchor="middle" y="-4" font-family="Fraunces,Noto Serif SC,serif" font-weight="400" font-size="34" fill="#024F94" letter-spacing="-1.5">350K<tspan font-size="22" fill="#44C9C1">+</tspan></text>
- <text id="donutCenterLbl" text-anchor="middle" y="20" font-family="Instrument Serif,Noto Serif SC,serif" font-style="italic" font-size="12" fill="#5A6678">daily touchpoints</text>
+ <text id="donutCenterLbl" text-anchor="middle" y="20" font-family="Instrument Serif,Noto Serif SC,serif" font-style="italic" font-size="12" fill="#5A6678">toques diários</text>
  </g>
  <g class="dn-legend-svg" transform="translate(320,90)" font-family="Inter Tight,Noto Sans SC,sans-serif">
  <g class="donut-legend-row" data-channel="voice">
  <rect x="0" y="0" width="14" height="14" rx="2" fill="url(#voiceGrad)"/>
- <text x="22" y="11" font-size="13" font-weight="600" fill="#0C1B2E">Voice calls</text>
- <text x="22" y="28" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="22" fill="#024F94" font-weight="500">250K+<tspan font-size="13" fill="#5A6678" font-style="normal" font-family="JetBrains Mono,Noto Sans SC,monospace"> ·/day · 71.4%</tspan></text>
+ <text x="22" y="11" font-size="13" font-weight="600" fill="#0C1B2E">Chamadas de voz</text>
+ <text x="22" y="28" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="22" fill="#024F94" font-weight="500">250K+<tspan font-size="13" fill="#5A6678" font-style="normal" font-family="JetBrains Mono,Noto Sans SC,monospace"> ·/day · 71,4%</tspan></text>
  </g>
  <g class="donut-legend-row" data-channel="sms">
  <rect x="0" y="58" width="14" height="14" rx="2" fill="url(#smsGrad)"/>
- <text x="22" y="69" font-size="13" font-weight="600" fill="#0C1B2E">SMS reminders</text>
- <text x="22" y="86" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="22" fill="#1FA59C" font-weight="500">100K+<tspan font-size="13" fill="#5A6678" font-style="normal" font-family="JetBrains Mono,Noto Sans SC,monospace"> ·/day · 28.6%</tspan></text>
+ <text x="22" y="69" font-size="13" font-weight="600" fill="#0C1B2E">Lembretes SMS</text>
+ <text x="22" y="86" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="22" fill="#1FA59C" font-weight="500">100K+<tspan font-size="13" fill="#5A6678" font-style="normal" font-family="JetBrains Mono,Noto Sans SC,monospace"> ·/day · 28,6%</tspan></text>
  </g>
  <line x1="0" y1="118" x2="220" y2="118" stroke="#E5E7EB" stroke-dasharray="2,2"/>
- <text x="0" y="138" font-family="JetBrains Mono,Noto Sans SC,monospace" font-size="10" letter-spacing="2" fill="#5A6678">SINGLE ORCHESTRATION · SAME PLATFORM</text>
+ <text x="0" y="138" font-family="JetBrains Mono,Noto Sans SC,monospace" font-size="10" letter-spacing="2" fill="#5A6678">ORQUESTRAÇÃO ÚNICA · MESMA PLATAFORMA</text>
  </g>
  </svg>
  <!-- HTML 图例 — 仅in窄视窗 (≤600px) 显示, 替代 SVG 内嵌图例. 
  宽视窗 display:none 已足以对屏幕阅读器隐藏; 
  无需 aria-hidden, 因for SR 会尊重 CSS 可见性. -->
- <div class="dn-legend-html" role="group" aria-label="Channel mix legend">
+ <div class="dn-legend-html" role="group" aria-label="Legenda do mix de canais">
  <button class="dn-leg-row" type="button" data-channel="voice">
  <span class="dn-leg-swatch dn-leg-swatch--voice"></span>
  <span class="dn-leg-txt">
- <span class="dn-leg-name">Voice calls</span>
- <span class="dn-leg-num">250K+<small> ·/day · 71.4%</small></span>
+ <span class="dn-leg-name">Chamadas de voz</span>
+ <span class="dn-leg-num">250K+<small> ·/day · 71,4%</small></span>
  </span>
  </button>
  <button class="dn-leg-row" type="button" data-channel="sms">
  <span class="dn-leg-swatch dn-leg-swatch--sms"></span>
  <span class="dn-leg-txt">
- <span class="dn-leg-name">SMS reminders</span>
- <span class="dn-leg-num">100K+<small> ·/day · 28.6%</small></span>
+ <span class="dn-leg-name">Lembretes SMS</span>
+ <span class="dn-leg-num">100K+<small> ·/day · 28,6%</small></span>
  </span>
  </button>
- <div class="dn-leg-footer">SINGLE ORCHESTRATION · SAME PLATFORM</div>
+ <div class="dn-leg-footer">ORQUESTRAÇÃO ÚNICA · MESMA PLATAFORMA</div>
  </div>
- <div class="chart-detail-bar" id="donutDetail"><span class="badge">▸ INTERACT</span><span>Click <b>Voice</b> or <b>SMS</b> to isolate the channel and see the split.</span></div>
- <div class="chart-foot">SOURCE · BANCO AZTECA — PUBLIC REPORT + AI RUDDER OPS</div>
+ <div class="chart-detail-bar" id="donutDetail"><span class="badge">▸ INTERAGIR</span><span>Clique em <b>Voz</b> ou <b>SMS</b> para isolar o canal e ver o split.</span></div>
+ <div class="chart-foot">FONTE · BANCO AZTECA — RELATÓRIO PÚBLICO + AI RUDDER OPS</div>
  </div>
 
  <!-- 5-COLUMN BENEFITS STRIP — value summary anchored on the official Banco Azteca infographic -->
- <div class="sol-benefits" role="list" aria-label="Solution core value">
+ <div class="sol-benefits" role="list" aria-label="Valor central da solução">
  <div class="sol-benefit" role="listitem">
  <span class="sol-benefit__icon" aria-hidden="true">
  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -2207,8 +2207,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <path d="M3 12h2M19 12h2"/>
  </svg>
  </span>
- <h4 class="sol-benefit__title">AI-Powered Conversations</h4>
- <p class="sol-benefit__desc">Natural, human-like interactions at scale</p>
+ <h4 class="sol-benefit__title">Conversas com IA</h4>
+ <p class="sol-benefit__desc">Interações naturais e humanas em escala</p>
  </div>
 
  <div class="sol-benefit" role="listitem">
@@ -2220,8 +2220,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <circle cx="17" cy="12" r="1" fill="currentColor"/>
  </svg>
  </span>
- <h4 class="sol-benefit__title">Automated SMS Reminders</h4>
- <p class="sol-benefit__desc">Timely, relevant reminders delivered automatically</p>
+ <h4 class="sol-benefit__title">Lembretes SMS automatizados</h4>
+ <p class="sol-benefit__desc">Lembretes oportunos e relevantes, entregues automaticamente</p>
  </div>
 
  <div class="sol-benefit" role="listitem">
@@ -2234,8 +2234,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <line x1="7" y1="13" x2="17" y2="17"/>
  </svg>
  </span>
- <h4 class="sol-benefit__title">Omnichannel Engagement</h4>
- <p class="sol-benefit__desc">Reaching customers across multiple channels seamlessly</p>
+ <h4 class="sol-benefit__title">Engajamento omnichannel</h4>
+ <p class="sol-benefit__desc">Alcance fluido em múltiplos canais</p>
  </div>
 
  <div class="sol-benefit" role="listitem">
@@ -2245,8 +2245,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <path d="M21 12a9 9 0 0 1-15.5 6.3M3 20v-5h5"/>
  </svg>
  </span>
- <h4 class="sol-benefit__title">Efficient Debt Recovery</h4>
- <p class="sol-benefit__desc">Better engagement drives improved recovery</p>
+ <h4 class="sol-benefit__title">Recuperação eficiente</h4>
+ <p class="sol-benefit__desc">Melhor engajamento gera recuperação superior</p>
  </div>
 
  <div class="sol-benefit" role="listitem">
@@ -2256,8 +2256,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <path d="M16 7H10a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6H7"/>
  </svg>
  </span>
- <h4 class="sol-benefit__title">Scalable & Cost-Effective</h4>
- <p class="sol-benefit__desc">Automated operations reduce costs and scale with demand</p>
+ <h4 class="sol-benefit__title">Escalável e custo-eficiente</h4>
+ <p class="sol-benefit__desc">Operação automatizada reduz custo e escala sob demanda</p>
  </div>
  </div>
  </div>
@@ -2266,27 +2266,27 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
 </section>
 
 <!-- ===== RESULTS ===== -->
-<section class="content" id="section-results" aria-label="Results" style="border-top:1px solid var(--line-strong)">
+<section class="content" id="section-results" aria-label="Resultados" style="border-top:1px solid var(--line-strong)">
  <div class="wrap">
  <div class="cgrid">
  <div>
- <div class="eyebrow"><span class="dot"></span>04 · Results</div>
- <h2>From a workforce ceiling to a <span class="it">500K+/day elastic engine</span>.</h2>
+ <div class="eyebrow"><span class="dot"></span>04 · Resultados</div>
+ <h2>De um teto de workforce a um <span class="it">motor elástico</span> de 500K+ chamadas/dia.</h2>
  </div>
  <div>
- <p class="lead">After deployment, AI Rudder swapped the rigid operational ceiling for AI-driven elastic throughput. Banco Azteca went from ~28K calls/day to <strong>500K+/day</strong> in capacity, reaching <strong>100K+ unique users daily</strong>, and reported a <strong>4× lift in conversion ROI</strong><a href="#claims-note" class="footnote-ref" aria-label="See metric source notes">*</a> versus baseline — with real-time visibility into every campaign.</p>
+ <p class="lead">Depois da implantação, a AI Rudder substituiu o limite operacional rígido por throughput elástico, dirigido por IA. O Banco Azteca saiu de ~28K chamadas/dia para uma capacidade de <strong>500K+/dia</strong>, alcançando <strong>100K+ usuários únicos por dia</strong> e reportando <strong>4× ROI de conversão</strong><a href="#claims-note" class="footnote-ref" aria-label="Ver notas de origem das métricas">*</a> versus o baseline — com visibilidade em tempo real campanha a campanha.</p>
 
  <!-- CHART: Before/After Bar · INTERACTIVE -->
  <div class="chart-card" id="chartVolume" data-chart="volume">
  <div class="chart-head">
- <h3>Daily call volume — before vs. after AI Rudder</h3>
- <span class="tag">Capacity · 17× scale · Interactive</span>
+ <h3>Volume diário de chamadas — antes vs. depois da AI Rudder</h3>
+ <span class="tag">Capacidade · escala 17× · Interativo</span>
  </div>
- <div class="chart-sub">Where the ceiling used to be workforce, now it's KPI. Hover over the bars.</div>
+ <div class="chart-sub">Onde antes o teto era de mão de obra, agora é de KPI. Passe o mouse sobre as barras.</div>
 
  <svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="volumeTitle volumeDesc" style="width:100%;height:auto">
- <title id="volumeTitle">Daily call volume — before vs. after AI Rudder</title>
- <desc id="volumeDesc">Capacity comparison: 28,450 calls/day baseline in a manual call center vs. 500,000+ calls/day with AI Voice Agent — approximately 17× more without increasing headcount.</desc>
+ <title id="volumeTitle">Volume diário de chamadas — antes vs. depois da AI Rudder</title>
+ <desc id="volumeDesc">Comparativo de capacidade: baseline de 28.450 chamadas/dia em call center manual versus 500.000+ chamadas/dia com AI Voice Agent — aumento de cerca de 17× sem ampliar headcount.</desc>
  <defs>
  <linearGradient id="barBefore" x1="0%" y1="0%" x2="0%" y2="100%">
  <stop offset="0%" stop-color="#94A3B8"/>
@@ -2315,39 +2315,39 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  </g>
 
  <!-- Before bar -->
- <g class="bar-int bar-vol-before" data-bar="before" data-tip-num="28,450" data-tip-lbl="Call center · manual baseline" data-tip-body="Traditional operation, bounded by human outbound capacity. ~5.7% of what the AI engine does today.">
+ <g class="bar-int bar-vol-before" data-bar="before" data-tip-num="28.450" data-tip-lbl="Call center · baseline manual" data-tip-body="Operação tradicional, limitada pela capacidade humana de discagem outbound. ~5,7% do que o motor AI faz hoje.">
  <rect x="180" y="280" width="100" height="15" fill="url(#barBefore)" rx="2"/>
- <text x="230" y="272" text-anchor="middle" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="22" font-weight="500" fill="#0C1B2E">28,450</text>
+ <text x="230" y="272" text-anchor="middle" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="22" font-weight="500" fill="#0C1B2E">28.450</text>
  <text x="230" y="316" text-anchor="middle" font-family="JetBrains Mono,Noto Sans SC,monospace" font-size="11" font-weight="500" fill="#5A6678" letter-spacing="1">CALL CENTER · BASELINE</text>
  </g>
 
  <!-- After bar -->
- <g class="bar-int bar-vol-after" data-bar="after" data-tip-num="500,000+" data-tip-lbl="AI Voice Agent · post-deployment" data-tip-body="Elastic capacity of the AI Rudder engine in production. No headcount expansion, no rigid workforce ceiling.">
+ <g class="bar-int bar-vol-after" data-bar="after" data-tip-num="500.000+" data-tip-lbl="AI Voice Agent · pós-implantação" data-tip-body="Capacidade elástica do motor AI Rudder em produção. Sem ampliar headcount, sem teto rígido de workforce.">
  <rect x="450" y="60" width="100" height="235" fill="url(#barAfter)" rx="2"/>
  <text x="500" y="52" text-anchor="middle" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="34" font-weight="500" fill="#024F94">500,000</text>
- <text x="500" y="316" text-anchor="middle" font-family="JetBrains Mono,Noto Sans SC,monospace" font-size="11" font-weight="500" fill="#024F94" letter-spacing="1">AI Voice Agent · post-deployment</text>
+ <text x="500" y="316" text-anchor="middle" font-family="JetBrains Mono,Noto Sans SC,monospace" font-size="11" font-weight="500" fill="#024F94" letter-spacing="1">AI Voice Agent · pós-implantação</text>
  </g>
 
  <!-- Arrow curve -->
  <path class="scale-arrow" d="M 280,270 Q 360,140 450,90" stroke="#44C9C1" stroke-width="2.4" fill="none" marker-end="url(#arrowHead)" stroke-linecap="round"/>
  <g class="scale-badge" transform="translate(340,150)">
  <rect x="-50" y="-22" width="100" height="32" rx="16" fill="#fff" stroke="#44C9C1" stroke-width="1.5"/>
- <text x="0" y="-2" text-anchor="middle" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="18" font-weight="500" fill="#1FA59C">~17× scale</text>
+ <text x="0" y="-2" text-anchor="middle" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="18" font-weight="500" fill="#1FA59C">~17× escala</text>
  </g>
 
- <text x="370" y="20" text-anchor="middle" font-family="Instrument Serif,Noto Serif SC,serif" font-style="italic" font-size="14" fill="#5A6678">Daily call capacity</text>
+ <text x="370" y="20" text-anchor="middle" font-family="Instrument Serif,Noto Serif SC,serif" font-style="italic" font-size="14" fill="#5A6678">Capacidade diária de chamadas</text>
  </svg>
- <div class="chart-detail-bar" id="volumeDetail"><span class="badge">▸ INTERACT</span><span>Hover over each bar for the before/after operational context.</span></div>
- <div class="chart-foot">SOURCE · BANCO AZTECA + AI RUDDER · DAILY OPERATIONAL CAPACITY</div>
+ <div class="chart-detail-bar" id="volumeDetail"><span class="badge">▸ INTERAGIR</span><span>Passe o mouse sobre cada barra para o contexto operacional do antes/depois.</span></div>
+ <div class="chart-foot">FONTE · BANCO AZTECA + AI RUDDER · CAPACIDADE OPERACIONAL DIÁRIA</div>
  </div>
 
- <h3 style="font-family:Fraunces,Noto Serif SC,serif;font-weight:500;font-size:24px;color:var(--navy-ink);margin:38px 0 12px;letter-spacing:-.01em">Executive summary of results</h3>
+ <h3 style="font-family:Fraunces,Noto Serif SC,serif;font-weight:500;font-size:24px;color:var(--navy-ink);margin:38px 0 12px;letter-spacing:-.01em">Resumo executivo dos resultados</h3>
  <table class="summary">
- <tr><td class="sum-key">Daily capacity</td><td class="sum-val">from ~28,450 → <b>500,000+</b> (~17×)</td></tr>
- <tr><td class="sum-key">Users reached / day</td><td class="sum-val"><b>100,000+</b> in effective base coverage</td></tr>
- <tr><td class="sum-key">conversion ROI</td><td class="sum-val"><b>4×</b> vs. manual baseline</td></tr>
- <tr><td class="sum-key">SMS orchestrated / day</td><td class="sum-val"><b>100,000+</b>, in conjunction with voice</td></tr>
- <tr><td class="sum-key">Decision velocity</td><td class="sum-val">real-time analytics · data-driven tuning per campaign</td></tr>
+ <tr><td class="sum-key">Capacidade diária</td><td class="sum-val">de ~28.450 → <b>500.000+</b> (~17×)</td></tr>
+ <tr><td class="sum-key">Usuários alcançados / dia</td><td class="sum-val"><b>100.000+</b> em cobertura efetiva de base</td></tr>
+ <tr><td class="sum-key">conversion ROI</td><td class="sum-val"><b>4×</b> vs. baseline manual</td></tr>
+ <tr><td class="sum-key">SMS orquestrados / dia</td><td class="sum-val"><b>100.000+</b>, em conjunto com voz</td></tr>
+ <tr><td class="sum-key">Velocidade de decisão</td><td class="sum-val">analytics em tempo real · tuning data-driven por campanha</td></tr>
  </table>
  </div>
  </div>
@@ -2355,33 +2355,33 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
 </section>
 
 <!-- ===== BRAZIL ===== -->
-<section class="brazil" id="section-brazil" aria-label="Brazil thesis">
+<section class="brazil" id="section-brazil" aria-label="Tese para o Brasil">
  <div class="wrap">
  <div class="section-head">
  <div class="sec-num">05</div>
  <div>
- <div class="eyebrow"><span class="dot"></span>Brazil · Replicable proof point</div>
- <h2>Why this case <span class="it">becomes the thesis</span> for the Brazilian market.</h2>
+ <div class="eyebrow"><span class="dot"></span>Brasil · Proof point replicável</div>
+ <h2>Por que esse caso <span class="it">vira tese</span> no mercado brasileiro.</h2>
  </div>
  </div>
 
  <div class="cgrid">
  <div>
- <p style="font-family:Instrument Serif,Noto Serif SC,serif;font-style:italic;font-size:22px;line-height:1.4;color:var(--ink);margin-bottom:24px">Azteca's operating context <span style="color:var(--teal-deep)">mirrors Brazil's almost exactly</span>: high delinquency, a massive customer base, a labor-intensive operation, unit-cost pressure, and tightening regulatory demands.</p>
- <p style="color:var(--ink-soft);font-size:15px">The same AI Voice Agent + SMS engine — localized to <strong style="color:var(--navy)">PT-BR</strong>, aligned with <strong style="color:var(--navy)">LGPD</strong>, and wired into local channels (including WhatsApp Business via AI Chat Agent) — is exactly what AI Rudder takes to Tier-1 banks, fintechs, BPOs, telcos and retailers in Brazil.</p>
+ <p style="font-family:Instrument Serif,Noto Serif SC,serif;font-style:italic;font-size:22px;line-height:1.4;color:var(--ink);margin-bottom:24px">O contexto do Azteca <span style="color:var(--teal-deep)">é quase o do Brasil</span>: alta inadimplência, base massiva, operação intensiva em pessoas, pressão por custo unitário e exigência regulatória crescente.</p>
+ <p style="color:var(--ink-soft);font-size:15px">O mesmo motor de AI Voice Agent + SMS — adaptado a <strong style="color:var(--navy)">português-BR</strong>, à <strong style="color:var(--navy)">LGPD</strong> e aos canais locais (incluindo WhatsApp Business via AI Chat Agent) — é o que a AI Rudder leva para bancos Tier-1, fintechs, BPOss, telecom e varejo no Brasil.</p>
  </div>
  <div>
  <!-- CHART: Brazil ICP Fit · INTERACTIVE -->
  <div class="chart-card" id="chartFit" data-chart="fit" style="margin:0">
  <div class="chart-head">
- <h3>Where Banco Azteca becomes a proof point in Brazil</h3>
- <span class="tag">Fit score · collections · Interactive</span>
+ <h3>Onde o Banco Azteca vira proof point no Brasil</h3>
+ <span class="tag">Score de fit · cobrança · Interativo</span>
  </div>
- <div class="chart-sub">Sector fit for the AI Voice Agent engine — click a bar to see target accounts.</div>
+ <div class="chart-sub">Aderência setorial ao motor AI Voice Agent — clique numa barra para ver os accounts-alvo.</div>
 
  <svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fitTitle fitDesc" style="width:100%;height:auto">
- <title id="fitTitle">Where Banco Azteca becomes a proof point in Brazil — sector fit score</title>
- <desc id="fitDesc">Sector adherence to the AI Voice Agent solution: Tier-1 Banks 95%, Fintechs 92%, BPO 88%, Telecom 80%, Retail 70%, Insurance 65%. The first four are primary ICP with direct proof; the last two are adjacent, suitable for a closed pilot.</desc>
+ <title id="fitTitle">Onde o Banco Azteca vira proof point no Brasil — score de fit setorial</title>
+ <desc id="fitDesc">Aderência por setor à solução AI Voice Agent: Bancos Tier-1 95%, Fintechs 92%, BPOs 88%, Telecom 80%, Varejo 70%, Seguros 65%. Os quatro primeiros são ICP primário com proof direto; os dois últimos são adjacentes para piloto fechado.</desc>
  <defs>
  <linearGradient id="hot" x1="0%" y1="0%" x2="100%" y2="0%">
  <stop offset="0%" stop-color="#012E58"/>
@@ -2410,109 +2410,109 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <line x1="200" y1="330" x2="680" y2="330" stroke="#0C1B2E"/>
  </g>
 
- <g class="bar-fit-group" data-sector="tier1" data-tip-num="95%" data-tip-lbl="Tier-1 Banks · primary ICP" data-tip-body="Itaú, Bradesco, Santander, BB · direct Banco Azteca proof → massive collections, regulatory proximity, CRM/core integration.">
- <text class="bar-fit-label" x="190" y="48" text-anchor="end" font-family="Fraunces,Noto Serif SC,serif" font-weight="500" font-size="14" fill="#0C1B2E">Tier-1 Banks</text>
+ <g class="bar-fit-group" data-sector="tier1" data-tip-num="95%" data-tip-lbl="Bancos Tier-1 · ICP primário" data-tip-body="Itaú, Bradesco, Santander, BB · proof direto Banco Azteca → cobrança massiva, regulatório próximo, integração CRM/core.">
+ <text class="bar-fit-label" x="190" y="48" text-anchor="end" font-family="Fraunces,Noto Serif SC,serif" font-weight="500" font-size="14" fill="#0C1B2E">Bancos Tier-1</text>
  <rect class="bar-fit" x="200" y="32" width="370" height="22" fill="url(#hot)" rx="2"/>
  <text x="585" y="48" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="15" font-weight="500" fill="#024F94">95%</text>
  </g>
 
- <g class="bar-fit-group" data-sector="fintechs" data-tip-num="92%" data-tip-lbl="Fintechs · primary ICP" data-tip-body="Nubank, Inter, BTG, PicPay, Stone, C6 · massive base, digital-first collections, WhatsApp Business mandatory.">
+ <g class="bar-fit-group" data-sector="fintechs" data-tip-num="92%" data-tip-lbl="Fintechs · ICP primário" data-tip-body="Nubank, Inter, BTG, PicPay, Stone, C6 · base massiva, cobrança digital-first, WhatsApp Business obrigatório.">
  <text class="bar-fit-label" x="190" y="88" text-anchor="end" font-family="Fraunces,Noto Serif SC,serif" font-weight="500" font-size="14" fill="#0C1B2E">Fintechs</text>
  <rect class="bar-fit" x="200" y="72" width="358" height="22" fill="url(#hot)" rx="2"/>
  <text x="573" y="88" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="15" font-weight="500" fill="#024F94">92%</text>
  </g>
 
- <g class="bar-fit-group" data-sector="bpo" data-tip-num="88%" data-tip-lbl="BPO · primary ICP" data-tip-body="Atento, AeC, Konecta, Almaviva, CSU, Paschoalotto · margin compressed by labor; Azteca proves scale without expanding headcount.">
- <text class="bar-fit-label" x="190" y="128" text-anchor="end" font-family="Fraunces,Noto Serif SC,serif" font-weight="500" font-size="14" fill="#0C1B2E">BPO</text>
+ <g class="bar-fit-group" data-sector="bpo" data-tip-num="88%" data-tip-lbl="BPOs · ICP primário" data-tip-body="Atento, AeC, Konecta, Almaviva, CSU, Paschoalotto · margem comprimida por MO; Azteca prova escala sem ampliar headcount.">
+ <text class="bar-fit-label" x="190" y="128" text-anchor="end" font-family="Fraunces,Noto Serif SC,serif" font-weight="500" font-size="14" fill="#0C1B2E">BPOs</text>
  <rect class="bar-fit" x="200" y="112" width="342" height="22" fill="url(#hot)" rx="2"/>
  <text x="557" y="128" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="15" font-weight="500" fill="#024F94">88%</text>
  </g>
 
- <g class="bar-fit-group" data-sector="telecom" data-tip-num="80%" data-tip-lbl="Telecom · primary ICP" data-tip-body="Vivo, TIM, Claro · collections, renewal, retention, installation confirmation. Mandatory 0303 + LGPD opt-in/opt-out.">
+ <g class="bar-fit-group" data-sector="telecom" data-tip-num="80%" data-tip-lbl="Telecom · ICP primário" data-tip-body="Vivo, TIM, Claro · cobrança, renovação, retenção, confirmação de instalação. 0303 + opt-in/opt-out LGPD obrigatórios.">
  <text class="bar-fit-label" x="190" y="168" text-anchor="end" font-family="Fraunces,Noto Serif SC,serif" font-weight="500" font-size="14" fill="#0C1B2E">Telecom</text>
  <rect class="bar-fit" x="200" y="152" width="310" height="22" fill="url(#warm)" rx="2"/>
  <text x="525" y="168" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="15" font-weight="500" fill="#024F94">80%</text>
  </g>
 
- <g class="bar-fit-group" data-sector="varejo" data-tip-num="70%" data-tip-lbl="Retail · adjacent · pilot" data-tip-body="Magalu, Casas Bahia, Mercado Livre, Renner · own financing + recurring collections. Closed pilot recommended.">
- <text class="bar-fit-label" x="190" y="208" text-anchor="end" font-family="Fraunces,Noto Serif SC,serif" font-weight="500" font-size="14" fill="#0C1B2E">Retail</text>
+ <g class="bar-fit-group" data-sector="varejo" data-tip-num="70%" data-tip-lbl="Varejo · adjacente · piloto" data-tip-body="Magalu, Casas Bahia, Mercado Livre, Renner · financiamento próprio + cobrança recorrente. Piloto fechado recomendado.">
+ <text class="bar-fit-label" x="190" y="208" text-anchor="end" font-family="Fraunces,Noto Serif SC,serif" font-weight="500" font-size="14" fill="#0C1B2E">Varejo</text>
  <rect class="bar-fit" x="200" y="192" width="270" height="22" fill="url(#cool)" rx="2"/>
  <text x="485" y="208" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="15" font-weight="500" fill="#1FA59C">70%</text>
  </g>
 
- <g class="bar-fit-group" data-sector="seguros" data-tip-num="65%" data-tip-lbl="Insurance · adjacent · pilot" data-tip-body="Porto, SulAmérica, Bradesco Seg., Allianz, Mapfre · renewal, premium reminders, active claims adjustment.">
- <text class="bar-fit-label" x="190" y="248" text-anchor="end" font-family="Fraunces,Noto Serif SC,serif" font-weight="500" font-size="14" fill="#0C1B2E">Insurance</text>
+ <g class="bar-fit-group" data-sector="seguros" data-tip-num="65%" data-tip-lbl="Seguros · adjacente · piloto" data-tip-body="Porto, SulAmérica, Bradesco Seg., Allianz, Mapfre · renovação, lembrete de parcela, regulação ativa de sinistro.">
+ <text class="bar-fit-label" x="190" y="248" text-anchor="end" font-family="Fraunces,Noto Serif SC,serif" font-weight="500" font-size="14" fill="#0C1B2E">Seguros</text>
  <rect class="bar-fit" x="200" y="232" width="250" height="22" fill="url(#cool)" rx="2"/>
  <text x="465" y="248" font-family="Fraunces,Noto Serif SC,serif" font-style="italic" font-size="15" font-weight="500" fill="#1FA59C">65%</text>
  </g>
 
  <g transform="translate(200,290)" font-family="JetBrains Mono,Noto Sans SC,monospace" font-size="10" fill="#5A6678">
  <rect x="0" y="0" width="14" height="10" fill="url(#hot)" rx="1"/>
- <text x="20" y="9">PRIMARY ICP · DIRECT PROOF</text>
+ <text x="20" y="9">ICP PRIMÁRIO · PROOF DIRETO</text>
  <rect x="220" y="0" width="14" height="10" fill="url(#cool)" rx="1"/>
- <text x="240" y="9">ADJACENT · TESTABLE PILOT</text>
+ <text x="240" y="9">ADJACENTE · PILOTO POSSÍVEL</text>
  </g>
  </svg>
- <div class="chart-detail-bar" id="fitDetail"><span class="badge">▸ INTERACT</span><span>Click a bar to see Brazilian target accounts in that sector.</span></div>
- <div class="chart-foot">SOURCE · AI RUDDER LATAM QUALITATIVE MAPPING · DISCOVERY THESES</div>
+ <div class="chart-detail-bar" id="fitDetail"><span class="badge">▸ INTERAGIR</span><span>Clique em uma barra para ver os accounts-alvo daquele setor no Brasil.</span></div>
+ <div class="chart-foot">FONTE · MAPEAMENTO QUALITATIVO AI RUDDER LATAM · TESES DE DISCOVERY</div>
  </div>
  </div>
  </div>
 
- <h3 style="font-family:Fraunces,Noto Serif SC,serif;font-weight:500;font-size:30px;color:var(--navy-ink);margin:60px 0 20px;letter-spacing:-.02em;line-height:1.1">How to use this reference in Brazilian <span style="font-style:italic;color:var(--teal-deep)">discovery</span></h3>
+ <h3 style="font-family:Fraunces,Noto Serif SC,serif;font-weight:500;font-size:30px;color:var(--navy-ink);margin:60px 0 20px;letter-spacing:-.02em;line-height:1.1">Como usar essa referência em <span style="font-style:italic;color:var(--teal-deep)">discovery</span> brasileira</h3>
 
  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 60px">
  <div>
  <div class="brazil-bullet">
- <div class="seg">Banks &amp; fintechs</div>
- <div class="desc"><b>Itaú, Bradesco, BTG, Inter, Nubank, PicPay, Stone, C6.</b> Same massive-collections thesis → AI Voice Agent + WhatsApp/SMS, plugged into the existing dialer and CRM.</div>
+ <div class="seg">Bancos &amp; fintechs</div>
+ <div class="desc"><b>Itaú, Bradesco, BTG, Inter, Nubank, PicPay, Stone, C6.</b> Mesma tese de cobrança massiva → AI Voice Agent + WhatsApp/SMS, integrado a discador atual e CRM.</div>
  </div>
  <div class="brazil-bullet">
- <div class="seg">BPO</div>
- <div class="desc"><b>Atento, AeC, Konecta, Almaviva, CSU, Paschoalotto, Algar Tech.</b> Margins squeezed by labor cost — Azteca demonstrates 17× scale without expanding headcount.</div>
+ <div class="seg">BPOs</div>
+ <div class="desc"><b>Atento, AeC, Konecta, Almaviva, CSU, Paschoalotto, Algar Tech.</b> Margem comprimida por custo de MO; Azteca mostra escala 17× sem ampliar headcount.</div>
  </div>
  <div class="brazil-bullet">
  <div class="seg">Telecom</div>
- <div class="desc"><b>Vivo, TIM, Claro.</b> Collections, renewals, retention and installation confirmations on a single engine.</div>
+ <div class="desc"><b>Vivo, TIM, Claro.</b> Cobrança, renovação, retenção e confirmação de instalação no mesmo motor.</div>
  </div>
  </div>
  <div>
  <div class="brazil-bullet">
- <div class="seg">Retail &amp; e-commerce</div>
- <div class="desc"><b>Magalu, Casas Bahia, Mercado Livre.</b> Own-book financing and recurring collections follow the same playbook as Azteca.</div>
+ <div class="seg">Varejo &amp; e-commerce</div>
+ <div class="desc"><b>Magalu, Casas Bahia, Mercado Livre.</b> Financiamento próprio + cobrança recorrente seguem o mesmo padrão do Azteca.</div>
  </div>
  <div class="brazil-bullet">
- <div class="seg">Insurance</div>
- <div class="desc"><b>Porto, SulAmérica, Bradesco Seg., Zurich, Allianz, Mapfre.</b> Policy renewals, premium reminders and active claims regulation.</div>
+ <div class="seg">Seguros</div>
+ <div class="desc"><b>Porto, SulAmérica, Bradesco Seg., Zurich, Allianz, Mapfre.</b> Renovação, lembrete de parcela e regulação ativa de sinistro.</div>
  </div>
  <div class="brazil-bullet">
- <div class="seg">Government &amp; utilities</div>
- <div class="desc"><b>Energy/water concessionaires, municipal governments.</b> Delinquency notices, tax reminders and debt-regularization outreach — with a built-in compliance audit trail.</div>
+ <div class="seg">Governo &amp; utilities</div>
+ <div class="desc"><b>Concessionárias de energia/água, prefeituras.</b> Notificação de inadimplência, lembrete tributário, regularização — com trilha de compliance.</div>
  </div>
  </div>
  </div>
 
  <!-- 执行简报 -->
  <div class="briefing">
- <div class="label">Executive briefing · English · 1 minute</div>
- <p class="text">Banco Azteca (Mexico, <b>20M+ customers</b>, 40K+ employees — public data) swapped manual collections for AI Rudder's <b>AI Voice Agent + automated SMS</b>. Daily volume jumped from <b>~28,450 calls</b> to <b>500,000+</b>, base coverage reaches <b>100K+ users/day</b>, and the team reports a <b>4× lift in conversion ROI</b>. For Brazil: the same engine, localized to PT-BR and wired into WhatsApp Business, runs in a closed pilot of typically <b>8–12 weeks</b> (one flow, one channel, one KPI), built for LGPD alignment (subject to your legal team's validation).</p>
+ <div class="label">Briefing executivo · PT-BR · 1 minuto</div>
+ <p class="text">Banco Azteca (México, <b>20M+ clientes</b>, 40k+ colaboradores — dados públicos) trocou cobrança manual por <b>AI Voice Agent + SMS automatizado</b> da AI Rudder. Saíram de <b>~28.450 chamadas/dia</b> para <b>500.000+/dia</b>, atingem <b>100k+ usuários/dia</b> em cobertura de base e relatam <b>4× ROI de conversão</b>. Tese para o Brasil: o mesmo motor, adaptado ao português-BR e integrado ao WhatsApp Business, em piloto fechado tipicamente de <b>8–12 semanas</b> (1 fluxo, 1 canal, 1 KPI), desenhado para aderência a LGPD (sujeito à validação jurídica do cliente).</p>
  </div>
 
  <!-- 需求挖掘问题 -->
- <h3 style="font-family:Fraunces,Noto Serif SC,serif;font-weight:500;font-size:24px;color:var(--navy-ink);margin:50px 0 8px;letter-spacing:-.01em">Discovery questions for the first call</h3>
+ <h3 style="font-family:Fraunces,Noto Serif SC,serif;font-weight:500;font-size:24px;color:var(--navy-ink);margin:50px 0 8px;letter-spacing:-.01em">Perguntas de discovery para a primeira call</h3>
  <ul class="check-list">
- <li><span class="num">01</span><span class="body">How many collection contacts do you make per day today? What's your <strong>average cost per contact</strong>?</span></li>
- <li><span class="num">02</span><span class="body">What's the conversion rate (payment-promise and actual-payment) and the average recovered ticket?</span></li>
- <li><span class="num">03</span><span class="body">What percentage of the delinquent base is contacted per cycle? Where is the <strong>coverage gap</strong>?</span></li>
- <li><span class="num">04</span><span class="body">Is WhatsApp already used transactionally? Is there a structured opt-in/opt-out flow (<strong>LGPD</strong>-aligned)?</span></li>
- <li><span class="num">05</span><span class="body">Which systems need to integrate — dialer, CRM, core banking, ticketing?</span></li>
- <li><span class="num">06</span><span class="body">What would a closed <strong>8–12 week pilot</strong> look like — which single flow, channel and KPI?</span></li>
+ <li><span class="num">01</span><span class="body">Quantos contatos de cobrança são feitos por dia hoje? Qual o <strong>custo médio por contato</strong>?</span></li>
+ <li><span class="num">02</span><span class="body">Qual a taxa de conversão (promessa de pagamento e pagamento efetivo) e o ticket médio?</span></li>
+ <li><span class="num">03</span><span class="body">Quantos % da base inadimplente é contatada por ciclo? Onde fica o <strong>gap de cobertura</strong>?</span></li>
+ <li><span class="num">04</span><span class="body">WhatsApp já é usado de forma transacional? Existe opt-in/opt-out estruturado (<strong>LGPD</strong>)?</span></li>
+ <li><span class="num">05</span><span class="body">Quais sistemas precisam integrar — discador, CRM, core bancário, ticketing?</span></li>
+ <li><span class="num">06</span><span class="body">Qual seria o escopo de um piloto fechado em <strong>8–12 semanas</strong> com 1 fluxo, 1 canal e 1 KPI?</span></li>
  </ul>
  </div>
 </section>
 
 <!-- ===== COMPETITIVE RADAR · MODERN DARK SECTION ===== -->
-<section class="radar-section" id="radarSection" aria-label="Competitive positioning">
+<section class="radar-section" id="radarSection" aria-label="Posicionamento competitivo">
  <div class="radar-bg">
  <div class="mesh m1"></div>
  <div class="mesh m2"></div>
@@ -2524,8 +2524,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <div class="sec-num">06</div>
  <div>
  <div class="eyebrow dark"><span class="dot live"></span>Competitive intelligence · 2026</div>
- <h2 class="dark">AI Rudder <span class="it">vs.</span> competitors<br><span style="color:var(--teal)">— the battle map.</span></h2>
- <p style="font-family:Instrument Serif,Noto Serif SC,serif;font-style:italic;font-size:20px;color:rgba(255,255,255,.78);max-width:680px;margin-top:18px;line-height:1.4">Seven dimensions. Three competitive tribes. One polygon showing where <span style="color:var(--teal)">coverage area</span> redefines value per TCO dollar.</p>
+ <h2 class="dark">AI Rudder <span class="it">vs.</span> concorrentes<br><span style="color:var(--teal)">— o mapa da disputa.</span></h2>
+ <p style="font-family:Instrument Serif,Noto Serif SC,serif;font-style:italic;font-size:20px;color:rgba(255,255,255,.78);max-width:680px;margin-top:18px;line-height:1.4">Sete dimensões. Três tribos competitivas. Um polígono que mostra <span style="color:var(--teal)">onde a área de cobertura</span> redefine valor por dólar de TCO.</p>
  </div>
  </div>
 
@@ -2535,7 +2535,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <div class="radar-head">
  <div>
  <h3>Capability surface · radar</h3>
- <p>Hover each polygon · click to isolate</p>
+ <p>Passe o mouse em cada polígono · clique para isolar</p>
  </div>
  <div class="radar-toggles">
  <button class="r-tog active" data-toggle="rudder"><span class="d" style="background:#44C9C1"></span>AI Rudder</button>
@@ -2625,18 +2625,18 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <!-- Live legend with area metric -->
  <div class="radar-legend">
  <div class="r-player active" data-player="rudder">
- <div class="r-head"><span class="r-dot" style="background:#44C9C1"></span><span class="r-name">AI Rudder</span><span class="r-area">87.7%</span></div>
- <div class="r-bar"><div class="r-fill" style="width:87.7%;background:#44C9C1"></div></div>
+ <div class="r-head"><span class="r-dot" style="background:#44C9C1"></span><span class="r-name">AI Rudder</span><span class="r-area">87,7%</span></div>
+ <div class="r-bar"><div class="r-fill" style="width:87,7%;background:#44C9C1"></div></div>
  <div class="r-meta">capability surface area</div>
  </div>
  <div class="r-player active" data-player="zenvia">
- <div class="r-head"><span class="r-dot" style="background:var(--warn)"></span><span class="r-name">Zenvia · Blip · Take</span><span class="r-area">70.7%</span></div>
- <div class="r-bar"><div class="r-fill" style="width:70.7%;background:#FB923C"></div></div>
+ <div class="r-head"><span class="r-dot" style="background:var(--warn)"></span><span class="r-name">Zenvia · Blip · Take</span><span class="r-area">70,7%</span></div>
+ <div class="r-bar"><div class="r-fill" style="width:70,7%;background:#FB923C"></div></div>
  <div class="r-meta">chat-first, voice-light</div>
  </div>
  <div class="r-player active" data-player="legacy">
- <div class="r-head"><span class="r-dot" style="background:#A78BFA"></span><span class="r-name">Genesys · Five9 · NICE</span><span class="r-area">62.4%</span></div>
- <div class="r-bar"><div class="r-fill" style="width:62.4%;background:#A78BFA"></div></div>
+ <div class="r-head"><span class="r-dot" style="background:#A78BFA"></span><span class="r-name">Genesys · Five9 · NICE</span><span class="r-area">62,4%</span></div>
+ <div class="r-bar"><div class="r-fill" style="width:62,4%;background:#A78BFA"></div></div>
  <div class="r-meta">enterprise legacy</div>
  </div>
  </div>
@@ -2646,37 +2646,37 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <!-- EXPLANATION PANE -->
  <div class="radar-explain">
  <div class="explain-card glass">
- <div class="ex-tag">▸ HOW TO READ</div>
- <h4>What the polygon means</h4>
- <p>Each axis represents a <b style="color:var(--teal)">capability</b> that matters in enterprise collections RFPs in Brazil. Distance from the center runs from <i>0</i> (not supported) to <i>100</i> (best-in-class). The <b style="color:var(--teal)">total polygon area</b> approximates <b>competitive coverage</b> — the larger it is, the more flanks you can defend in the deal.</p>
+ <div class="ex-tag">▸ COMO LER</div>
+ <h4>O que o polígono significa</h4>
+ <p>Cada eixo é uma <b style="color:var(--teal)">capability</b> que importa em RFP de cobrança enterprise no Brasil. A distância do centro vai de <i>0</i> (não suporta) a <i>100</i> (best-in-class). A <b style="color:var(--teal)">área total do polígono</b> aproxima a <b>cobertura competitiva</b> — quanto maior, mais flancos defendidos no deal.</p>
  <ul class="ex-list">
- <li><b>Area ≈ value coverage</b> — it's not about winning a single dimension, it's the sum you can defend across all of them.</li>
- <li><b>Shape matters</b> — a narrow polygon is a vulnerable specialist. A big, round polygon wins RFPs.</li>
- <li><b>Critical axes for collections</b> — Voice AI, Collection Specialization and LATAM Presence carry the heaviest weight.</li>
+ <li><b>Área ≈ value coverage</b> — não é o vencedor por dimensão, é a soma defendida em todas elas.</li>
+ <li><b>Formato</b> — um polígono "estreito" é especialista vulnerável. Um polígono "redondo e grande" é o que ganha RFPs.</li>
+ <li><b>Eixos críticos pra cobrança</b> — Voice AI + Collection Specialization + LATAM Presence pesam mais.</li>
  </ul>
  </div>
 
  <div class="explain-card glass winner" data-player="rudder">
  <div class="ex-head">
  <div class="ex-dot" style="background:#44C9C1"></div>
- <h4>AI Rudder<span class="ex-area">87.7% area · winner</span></h4>
+ <h4>AI Rudder<span class="ex-area">87,7% area · winner</span></h4>
  </div>
  <div class="pros-cons">
  <div class="pros">
- <div class="pc-lbl">+ Pros</div>
+ <div class="pc-lbl">+ Prós</div>
  <ul>
- <li>Voice AI purpose-built for collections — not a horizontal platform</li>
- <li>8–12 week deployment with a battle-tested LATAM playbook</li>
- <li>Real production footprint in Brazil and Mexico (Banco Azteca)</li>
- <li>Flexible per-minute or per-session pricing — no seat licenses</li>
- <li>SOC 2 + ISO 27001 + GDPR + PDPA + LGPD-aligned</li>
+ <li>Voice AI especializado em cobrança (não horizontal)</li>
+ <li>Deploy de 8–12 semanas com playbook LATAM pronto</li>
+ <li>Presença real no Brasil + MX, em produção (Banco Azteca)</li>
+ <li>Pricing flexível por minuto/sessão · sem licença por seat</li>
+ <li>SOC 2 + ISO 27001 + GDPR + PDPA + aderente a LGPD</li>
  </ul>
  </div>
  <div class="cons">
- <div class="pc-lbl">– Cons</div>
+ <div class="pc-lbl">– Contras</div>
  <ul>
- <li>Brand awareness still building outside Asia and LATAM</li>
- <li>Chat AI is improving fast, but Zenvia still leads on pure WhatsApp UX</li>
+ <li>Brand awareness ainda em construção fora da Ásia/LATAM</li>
+ <li>Chat AI cresce, mas Zenvia ainda lidera em UX WhatsApp puro</li>
  </ul>
  </div>
  </div>
@@ -2685,23 +2685,23 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <div class="explain-card glass" data-player="zenvia">
  <div class="ex-head">
  <div class="ex-dot" style="background:var(--warn)"></div>
- <h4>Zenvia · Blip · Take<span class="ex-area">70.7% area · chat-first</span></h4>
+ <h4>Zenvia · Blip · Take<span class="ex-area">70,7% area · chat-first</span></h4>
  </div>
  <div class="pros-cons">
  <div class="pros">
- <div class="pc-lbl">+ Pros</div>
+ <div class="pc-lbl">+ Prós</div>
  <ul>
- <li>Dominant in Brazilian Chat AI and WhatsApp Business</li>
- <li>LATAM-native, with first-class PT-BR support</li>
- <li>Competitive pricing at transactional volume</li>
+ <li>Domínio em Chat AI/WhatsApp Business no Brasil</li>
+ <li>Casa em LATAM, suporte português-BR nativo</li>
+ <li>Pricing competitivo em volume transacional</li>
  </ul>
  </div>
  <div class="cons">
- <div class="pc-lbl">– Cons</div>
+ <div class="pc-lbl">– Contras</div>
  <ul>
- <li>Generic Voice AI — not tuned for collections workflows</li>
- <li>No 500K+ calls/day proof point</li>
- <li>Lighter enterprise compliance (ISO/SOC coverage varies by product)</li>
+ <li>Voice AI genérico — não otimizado para cobrança</li>
+ <li>Sem proof point de 500K+ chamadas/dia</li>
+ <li>Compliance enterprise mais leve (ISO/SOC variável)</li>
  </ul>
  </div>
  </div>
@@ -2710,24 +2710,24 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <div class="explain-card glass" data-player="legacy">
  <div class="ex-head">
  <div class="ex-dot" style="background:#A78BFA"></div>
- <h4>Genesys · Five9 · NICE<span class="ex-area">62.4% area · legacy</span></h4>
+ <h4>Genesys · Five9 · NICE<span class="ex-area">62,4% area · legacy</span></h4>
  </div>
  <div class="pros-cons">
  <div class="pros">
- <div class="pc-lbl">+ Pros</div>
+ <div class="pc-lbl">+ Prós</div>
  <ul>
- <li>Best-in-class enterprise compliance and governance</li>
- <li>Names that get nodded through IT and security committees</li>
- <li>Mature, well-documented integrations with global CRMs</li>
+ <li>Enterprise compliance e governança best-in-class</li>
+ <li>Brand reconhecido em comitês de TI/segurança</li>
+ <li>Integrações maduras com CRMs globais</li>
  </ul>
  </div>
  <div class="cons">
- <div class="pc-lbl">– Cons</div>
+ <div class="pc-lbl">– Contras</div>
  <ul>
- <li>6–12 month deployment cycle — far slower than SMB/fintech timing</li>
- <li>Rigid per-seat pricing — TCO runs 2–4× higher at scale</li>
- <li>Limited LATAM presence — no specific focus on Brazilian collections</li>
- <li>Conversational AI bolted on as an add-on, not the core engine</li>
+ <li>Deploy de 6–12 meses · longe do timing PME/fintech</li>
+ <li>Pricing rígido por seat · TCO 2–4× pior em escala</li>
+ <li>LATAM presence limitada · sem foco em cobrança BR</li>
+ <li>AI conversacional como add-on, não como motor central</li>
  </ul>
  </div>
  </div>
@@ -2735,7 +2735,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
 
  <div class="explain-card glass tldr">
  <div class="ex-tag" style="color:var(--teal)">▸ TL;DR</div>
- <p><b>Coverage area isn't aesthetic</b> — it's the <span style="color:var(--teal)">negotiation flank</span>. AI Rudder leads on the dimensions that actually decide collections deals: <b>specialized voice, fast deployment, local presence, flexible pricing</b>. Competitors win individual axes but lose on <i>defendable surface area</i>.</p>
+ <p><b>Cobertura de área</b> não é estética — é o <span style="color:var(--teal)">flanco de negociação</span>. AI Rudder lidera onde o deal de cobrança é decidido: <b>voz especializada + deploy rápido + presença local + pricing flexível</b>. Concorrentes ganham eixos isolados, mas perdem em <i>defendable surface</i>.</p>
  </div>
  </div>
  </div>
@@ -2743,13 +2743,13 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
 </section>
 
 <!-- ===== ROI CALCULATOR ===== -->
-<section class="roi-section" id="section-roi" aria-label="ROI calculator">
+<section class="roi-section" id="section-roi" aria-label="Calculadora de ROI">
  <div class="wrap">
  <div class="section-head">
  <div class="sec-num">10</div>
  <div>
- <div class="eyebrow"><span class="dot"></span>Calculator · estimated ROI</div>
- <h2>How much is this worth <span class="it">for your operation?</span></h2>
+ <div class="eyebrow"><span class="dot"></span>Calculadora · ROI estimado</div>
+ <h2>Quanto isso vale <span class="it">para sua operação?</span></h2>
  </div>
  </div>
 
@@ -2757,49 +2757,49 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <!-- 输入卡片 -->
  <div>
  <div class="roi-card">
- <p style="font-family:'Instrument Serif','Noto Serif SC',serif;font-style:italic;font-size:18px;color:var(--ink-soft);line-height:1.5;margin-bottom:6px">Adjust the parameters to your reality. The calculation is instantaneous.</p>
+ <p style="font-family:'Instrument Serif','Noto Serif SC',serif;font-style:italic;font-size:18px;color:var(--ink-soft);line-height:1.5;margin-bottom:6px">Ajuste os parâmetros à sua realidade. O cálculo é instantâneo.</p>
 
  <div class="roi-inputs">
  <div class="roi-input">
  <div class="roi-input__head">
- <span class="roi-input__lbl">Delinquent portfolio</span>
+ <span class="roi-input__lbl">Carteira inadimplente</span>
  <span class="roi-input__val" id="roiVal-accounts">500K</span>
  </div>
- <input class="roi-slider" id="roi-accounts" type="range" min="50000" max="20000000" step="50000" value="500000" aria-label="Delinquent portfolio — number of accounts">
- <span class="roi-input__sub">accounts in arrears</span>
+ <input class="roi-slider" id="roi-accounts" type="range" min="50000" max="20000000" step="50000" value="500000" aria-label="Carteira inadimplente — número de contas">
+ <span class="roi-input__sub">contas em atraso</span>
  </div>
 
  <div class="roi-input">
  <div class="roi-input__head">
- <span class="roi-input__lbl">Attempts / account / month</span>
+ <span class="roi-input__lbl">Tentativas / conta / mês</span>
  <span class="roi-input__val" id="roiVal-attempts">8</span>
  </div>
- <input class="roi-slider" id="roi-attempts" type="range" min="2" max="20" step="1" value="8" aria-label="Attempts / account / month">
- <span class="roi-input__sub">typical average · escalated collections</span>
+ <input class="roi-slider" id="roi-attempts" type="range" min="2" max="20" step="1" value="8" aria-label="Tentativas / conta / mês">
+ <span class="roi-input__sub">média típica · cobrança escalonada</span>
  </div>
 
  <div class="roi-input">
  <div class="roi-input__head">
- <span class="roi-input__lbl">Cost / human call</span>
+ <span class="roi-input__lbl">Custo / chamada humana</span>
  <span class="roi-input__val" id="roiVal-cost">R$ 3,80</span>
  </div>
- <input class="roi-slider" id="roi-cost" type="range" min="1.50" max="8.00" step="0.10" value="3.80" aria-label="Cost per call with human operator">
- <span class="roi-input__sub">including BPO, supervision, infrastructure</span>
+ <input class="roi-slider" id="roi-cost" type="range" min="1.50" max="8.00" step="0.10" value="3.80" aria-label="Custo por chamada com operador humano">
+ <span class="roi-input__sub">incluindo BPOs, supervisão, infraestrutura</span>
  </div>
 
  <div class="roi-input">
  <div class="roi-input__head">
- <span class="roi-input__lbl">Current recovery</span>
+ <span class="roi-input__lbl">Recuperação atual</span>
  <span class="roi-input__val" id="roiVal-recovery">18%</span>
  </div>
- <input class="roi-slider" id="roi-recovery" type="range" min="5" max="35" step="1" value="18" aria-label="Current recovery rate of the operation">
- <span class="roi-input__sub">% of portfolio recovered per cohort</span>
+ <input class="roi-slider" id="roi-recovery" type="range" min="5" max="35" step="1" value="18" aria-label="Taxa de recuperação atual da operação">
+ <span class="roi-input__sub">% da carteira recuperada por safra</span>
  </div>
  </div>
 
- <div class="roi-presets" role="group" aria-label="Operation size presets">
+ <div class="roi-presets" role="group" aria-label="Presets de tamanho de operação">
  <button class="roi-preset" type="button" data-preset="fintech" data-track="roi.preset">Fintech · 200K</button>
- <button class="roi-preset is-active" type="button" data-preset="banco-medio" data-track="roi.preset">Mid-size bank · 500K</button>
+ <button class="roi-preset is-active" type="button" data-preset="banco-medio" data-track="roi.preset">Banco médio · 500K</button>
  <button class="roi-preset" type="button" data-preset="tier1" data-track="roi.preset">Tier-1 · 5M</button>
  <button class="roi-preset" type="button" data-preset="azteca" data-track="roi.preset">Azteca-scale · 20M</button>
  </div>
@@ -2810,38 +2810,38 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <div>
  <div class="roi-output" role="region" aria-live="polite" aria-atomic="true">
  <div class="roi-output__head">
- <span class="roi-output__eyebrow">Estimated result</span>
- <span class="roi-output__period">12 months · in R$</span>
+ <span class="roi-output__eyebrow">Resultado estimado</span>
+ <span class="roi-output__period">12 meses · em R$</span>
  </div>
 
  <div class="roi-output__grid">
  <div class="roi-output__primary">
- <div class="lbl">Total capturable value</div>
+ <div class="lbl">Valor total capturável</div>
  <div class="val" id="roiOutTotal">—</div>
- <div class="sub" id="roiOutSub">— operational cost savings + recovery uplift</div>
+ <div class="sub" id="roiOutSub">— economia em custo operacional + uplift de recuperação</div>
  </div>
  <div class="roi-output__secondary">
  <div class="roi-stat">
- <span class="lbl">Cost savings</span>
+ <span class="lbl">Economia de custo</span>
  <span class="val" id="roiOutSavings">—</span>
  </div>
  <div class="roi-stat">
- <span class="lbl">Recovery uplift</span>
+ <span class="lbl">Uplift de recuperação</span>
  <span class="val" id="roiOutUplift">—</span>
  </div>
  <div class="roi-stat">
- <span class="lbl">Cost / AI call</span>
+ <span class="lbl">Custo / chamada AI</span>
  <span class="val" id="roiOutAiCost">—</span>
  </div>
  <div class="roi-stat">
- <span class="lbl">Pilot payback</span>
+ <span class="lbl">Payback do piloto</span>
  <span class="val" id="roiOutPayback">—</span>
  </div>
  </div>
  </div>
 
  <div class="roi-output__foot">
- <b>Assumptions:</b> average AI Rudder cost per call <b>R$ 0.55</b> · recovery uplift <b>4×</b>, anchored on the Banco Azteca proof point · average recovered ticket <b>R$ 480</b> · 12-month cycle. These are indicative values, not a commercial proposal — final numbers are validated during discovery.
+ <b>Premissas:</b> custo médio de chamada AI Rudder <b>R$ 0,55</b> · uplift de recuperação <b>4×</b> baseado no proof Banco Azteca · ticket médio recuperado <b>R$ 480</b> · ciclo de 12 meses · valores indicativos, não constituem proposta comercial. Cálculos completos validados em discovery.
  </div>
  </div>
  </div>
@@ -2856,100 +2856,100 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <div class="sec-num">11</div>
  <div>
  <div class="eyebrow"><span class="dot"></span>FAQ</div>
- <h2>What people <span class="it">usually ask</span> before the pilot.</h2>
+ <h2>O que <span class="it">geralmente perguntam</span> antes do piloto.</h2>
  </div>
  </div>
 
  <div class="faq-list">
  <details class="faq-item">
- <summary><span class="faq-num">01</span><span>How long does a typical pilot take, from signed contract to first production metric?</span></summary>
+ <summary><span class="faq-num">01</span><span>Quanto tempo dura um piloto típico, do contrato à primeira métrica em produção?</span></summary>
  <div class="faq-body">
- <p><strong>8–12 weeks</strong> for a tightly scoped pilot: one flow (e.g. installment reminders), one channel (voice or SMS), and one primary KPI (payment-promise rate or recovery rate). The cadence:</p>
+ <p><strong>8–12 semanas</strong> em escopo fechado: 1 fluxo (ex: lembrete de parcela), 1 canal (voz ou SMS), 1 KPI primário (taxa de promessa de pagamento ou recuperação). Inclui:</p>
  <ul>
- <li><strong>Weeks 1–3</strong> · technical integration — dialer, CRM, core banking, contact list</li>
- <li><strong>Weeks 4–6</strong> · AI Voice Agent training in PT-BR, script A/B testing, call-time calibration</li>
- <li><strong>Weeks 7–10</strong> · controlled ramp-up — 10% → 50% → 100% of the target portfolio</li>
- <li><strong>Weeks 11–12</strong> · results vs. baseline analysis, go/no-go decision for rollout</li>
+ <li><strong>Semanas 1–3</strong> · integração técnica (discador, CRM, core bancário, lista de contatos)</li>
+ <li><strong>Semanas 4–6</strong> · treinamento do AI Voice Agent em PT-BR, testes A/B de script, calibração de horário</li>
+ <li><strong>Semanas 7–10</strong> · ramp-up controlado (10% → 50% → 100% da carteira-alvo)</li>
+ <li><strong>Semanas 11–12</strong> · análise de resultado vs. baseline, decisão go/no-go para expansão</li>
  </ul>
- <p>Lighter pilots (one SMS flow against a single list) can run in <strong>4–6 weeks</strong>.</p>
+ <p>Pilotos mais simples (1 fluxo de SMS, lista única) podem rodar em <strong>4–6 semanas</strong>.</p>
  </div>
  </details>
 
  <details class="faq-item">
- <summary><span class="faq-num">02</span><span>Will it integrate with our dialer, CRM, core banking system and WhatsApp Business?</span></summary>
+ <summary><span class="faq-num">02</span><span>Integra com nosso discador, CRM, core bancário e WhatsApp Business?</span></summary>
  <div class="faq-body">
- <p>Yes — every common Brazilian integration is already in place:</p>
+ <p>Sim — todas as integrações comuns no Brasil já estão prontas:</p>
  <ul>
- <li><strong>Dialers</strong> · Genesys, Five9, Avaya, Nice, Vocalcom, Dialfire, Hi Platform — REST + SIP</li>
- <li><strong>CRMs</strong> · Salesforce, HubSpot, Zoho, Dynamics, Pipedrive — bidirectional via API</li>
- <li><strong>Core banking</strong> · TOTVS Banking, Fiserv, Temenos T24, plus customizable connectors for proprietary stacks like Itaú's internal APIs</li>
- <li><strong>WhatsApp Business</strong> · direct Meta Cloud API (we're a Meta Business Partner), also routable through Twilio, Take Blip or Zenvia</li>
- <li><strong>Credit bureau data</strong> · Boa Vista, Serasa Experian, SCPC, Quod — for contact enrichment and mailing-list hygiene</li>
+ <li><strong>Discadores</strong> · Genesys, Five9, Avaya, Nice, Vocalcom, Dialfire, Hi Platform — REST + SIP</li>
+ <li><strong>CRMs</strong> · Salesforce, HubSpot, Zoho, Dynamics, Pipedrive — bidirecional via API</li>
+ <li><strong>Core bancário</strong> · TOTVS Banking, Fiserv, Temenos T24, Itaú internal APIs — conectores customizáveis</li>
+ <li><strong>WhatsApp Business</strong> · Meta Cloud API direto (somos Meta Official Business Partner), também via Twilio, Take Blip, Zenvia</li>
+ <li><strong>Cobrança</strong> · Boa Vista, Serasa Experian, SCPC, Quod — para enriquecimento e check de mailing</li>
  </ul>
- <p>New integrations typically take <strong>1–2 weeks</strong> of shared engineering time between both sides.</p>
+ <p>Integrações novas levam tipicamente 1–2 semanas de eng. compartilhada entre os dois lados.</p>
  </div>
  </details>
 
  <details class="faq-item">
- <summary><span class="faq-num">03</span><span>How do you handle LGPD, opt-in/opt-out, and data residency in Brazil?</span></summary>
+ <summary><span class="faq-num">03</span><span>Como vocês tratam LGPD, opt-in/opt-out, e residência de dados no Brasil?</span></summary>
  <div class="faq-body">
- <p>The platform was <strong>designed for LGPD alignment from day one</strong> (subject to your legal team's validation):</p>
+ <p>O motor foi <strong>desenhado para aderência a LGPD desde o início</strong> (sujeito à validação jurídica do cliente):</p>
  <ul>
- <li><strong>Legal bases</strong> · contract performance + legitimate interest, documented in a per-client DPA</li>
- <li><strong>Structured opt-out</strong> · "STOP" replies in SMS and natural-language "remove my number" in voice are recognised automatically and synced platform-wide in under an hour</li>
- <li><strong>"Não Me Perturbe" + 0303 prefix</strong> · honored via list cross-check before every wave; calls placed only on 0303 prefixes for the regulated categories that require them</li>
- <li><strong>Data residency</strong> · we can host in AWS São Paulo (sa-east-1) or GCP São Paulo, with a region-specific DPA</li>
- <li><strong>Retention &amp; data-subject rights</strong> · per-CPF export and delete APIs, plus a dedicated DPO dashboard</li>
+ <li><strong>Bases legais</strong> · execução de contrato + interesse legítimo · documentadas em DPA por cliente</li>
+ <li><strong>Opt-out estruturado</strong> · resposta "SAIR" em SMS, "tira meu número" reconhecido em voz, sincronizado em &lt; 1h em toda a plataforma</li>
+ <li><strong>Não Me Perturbe + 0303</strong> · honrados via lista cruzada antes de cada onda; chamadas só nos prefixos 0303 nas categorias regulamentadas</li>
+ <li><strong>Residência de dados</strong> · podemos hospedar em AWS São Paulo (sa-east-1) ou GCP São Paulo · DPA específico por região</li>
+ <li><strong>Retenção e direitos do titular</strong> · APIs de export/delete por CPF + dashboard de DPO</li>
  </ul>
- <p>Clients always run a pen-test and LGPD audit before go-live. We're SOC 2 Type II and ISO 27001 certified today.</p>
+ <p>Clientee sempre executa pen-test e auditoria LGPD antes de go-live. SOC 2 Type II + ISO 27001 atuais.</p>
  </div>
  </details>
 
  <details class="faq-item">
- <summary><span class="faq-num">04</span><span>How do you price — per minute, per call, or per seat?</span></summary>
+ <summary><span class="faq-num">04</span><span>Como vocês precificam? Por minuto, por chamada, por seat?</span></summary>
  <div class="faq-body">
- <p>Three models — pick the one your CFO prefers:</p>
+ <p>Três modelos disponíveis, escolha o que se encaixa no seu CFO:</p>
  <ul>
- <li><strong>Per connected call</strong> · R$ 0.40–0.80 per human-answered call · no minimum · best for high-volatility operations</li>
- <li><strong>Per spoken minute</strong> · R$ 0.18–0.30 per minute · best for longer discovery-style conversations</li>
- <li><strong>SaaS licensing</strong> · monthly package per active bot · 25–40% cheaper than per-call when volume is stable</li>
+ <li><strong>Por chamada conectada</strong> · R$ 0,40–0,80 por chamada com atendimento humano · sem mínimo · ideal para operações com volatilidade alta</li>
+ <li><strong>Por minuto falado</strong> · R$ 0,18–0,30 por minuto · adequado para fluxos de discovery longos</li>
+ <li><strong>SaaS com licenças</strong> · pacote mensal por bot ativo · economia de 25–40% quando volume é estável</li>
  </ul>
- <p>SMS runs <strong>R$ 0.04–0.07 per message</strong> (carrier and volume dependent). WhatsApp follows Meta's official rate card. Discovery is free.</p>
+ <p>SMS: <strong>R$ 0,04–0,07 por mensagem</strong> (depende de operadora e volume). WhatsApp via Meta segue tabela oficial. Discovery não tem custo.</p>
  </div>
  </details>
 
  <details class="faq-item">
- <summary><span class="faq-num">05</span><span>What's the learning curve for our operations team?</span></summary>
+ <summary><span class="faq-num">05</span><span>Qual a curva de aprendizado para nosso time de operações?</span></summary>
  <div class="faq-body">
- <p>Running the engine after the pilot is <strong>genuinely lightweight</strong> — typically:</p>
+ <p>O time que opera o motor depois do piloto é <strong>pequeno e enxuto</strong> — tipicamente:</p>
  <ul>
- <li>One product owner, ~50% dedicated, owning script and flow decisions</li>
- <li>One ops manager, tracking daily KPIs from the dashboard</li>
- <li>Occasional access from 1–2 of your engineers for integration changes</li>
+ <li>1 product owner (50% dedicado, decisões de script e fluxo)</li>
+ <li>1 ops manager (acompanha KPIs diários no dashboard)</li>
+ <li>Acesso pontual de 1–2 devs do lado do cliente para integrações</li>
  </ul>
- <p>From our side: <strong>a dedicated Customer Success Manager</strong> fluent in PT-BR and English, plus 24/7 support from our Singapore team. Onboarding is two 90-minute sessions covering the dashboard, script tuning and analytics. No mandatory certification.</p>
+ <p>Da AI Rudder: <strong>1 Customer Success Manager dedicado</strong> em PT-BR + suporte 24/7 do time de Cingapura. Treinamento inicial: 2 sessões de 90 min cobrindo dashboard, ajustes de script, leitura de analytics. Sem certificação obrigatória.</p>
  </div>
  </details>
 
  <details class="faq-item">
- <summary><span class="faq-num">06</span><span>Who else is using AI Rudder in Brazil or LATAM?</span></summary>
+ <summary><span class="faq-num">06</span><span>Quem mais já usa AI Rudder no Brasil ou no LATAM?</span></summary>
  <div class="faq-body">
- <p>Live in LATAM today: <strong>Banco Azteca</strong> (Mexico — the subject of this case), plus additional banks and fintechs in Mexico, Colombia and Peru. In Brazil we're running closed pilots with two Tier-1 fintechs and one retail bank — references available under NDA during discovery.</p>
- <p>Globally we serve <strong>200+ clients</strong> across 25 countries, with active operations in Southeast Asia (Indonesia, the Philippines, Vietnam, Thailand), India, the Middle East and Africa. <strong>Backed by</strong> Sequoia Capital, Coatue and Tiger Global.</p>
+ <p>Em produção no LATAM hoje: <strong>Banco Azteca</strong> (México, este case), além de outros bancos e fintechs em México, Colômbia e Peru. No Brasil estamos em pilotos fechados com 2 fintechs Tier-1 e 1 banco de varejo — referências disponíveis sob NDA durante o ciclo de discovery.</p>
+ <p>Globalmente: mais de <strong>200 clientes</strong> em 25 países, com operações ativas em SE Asia (Indonésia, Filipinas, Vietnã, Tailândia), Índia, Oriente Médio e África. <strong>Backers</strong>: Sequoia Capital, Coatue, Tiger Global.</p>
  </div>
  </details>
 
  <details class="faq-item">
- <summary><span class="faq-num">07</span><span>What happens if the pilot doesn't hit the agreed KPIs?</span></summary>
+ <summary><span class="faq-num">07</span><span>E se o piloto não bater os KPIs combinados?</span></summary>
  <div class="faq-body">
- <p>The pilot is engineered to <strong>de-risk the decision completely</strong>:</p>
+ <p>O piloto é desenhado para <strong>derisk total</strong>:</p>
  <ul>
- <li>The primary KPI is agreed at kickoff with an audited baseline</li>
- <li>Fortnightly checkpoints — if the curve isn't converging by week 6, we either adjust scope or stop</li>
- <li>No exit fee. No exclusivity clause</li>
- <li>Data generated during the pilot stays with you — full export on request</li>
+ <li>KPI primário acordado no kickoff, com baseline auditado</li>
+ <li>Checkpoints quinzenais — se a curva não converge em 6 semanas, ajustamos escopo ou interrompemos</li>
+ <li>Sem multa de saída no piloto · sem cláusula de exclusividade</li>
+ <li>Dados gerados durante o piloto ficam com o cliente (export completo)</li>
  </ul>
- <p>About <strong>85% of pilots</strong> hit or exceed the target KPI. In the 15% that don't, the root cause is almost always mailing-list quality (stale contact data) — we typically identify it in week three. It's rarely the voice platform itself.</p>
+ <p>Em ~85% dos pilotos, o KPI é atingido ou superado. Nos 15% que não atingem, normalmente é um problema de mailing (dados de contato desatualizados) que identificamos na semana 3 — não da plataforma de voz em si.</p>
  </div>
  </details>
  </div>
@@ -2957,25 +2957,25 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
 </section>
 
 <!-- ===== CTA ===== -->
-<section class="cta-section" id="section-cta" aria-label="Next steps · CTA">
+<section class="cta-section" id="section-cta" aria-label="Próximos passos · CTA">
  <div class="wrap cta-grid">
  <div>
- <div class="eyebrow" style="color:var(--teal);margin-bottom:18px"><span class="dot"></span>Next steps</div>
- <h2 data-variant-show="A">Want to map this same engine to your <span class="it">operation in Brazil</span>?</h2>
- <h2 data-variant-show="B">Ready for an <span class="it">8-week</span> pilot that pays for itself?</h2>
- <p class="lead">20-minute discovery. No pitch — just numbers, flows, integrations, and what we can do in an 8–12 week closed pilot.</p>
+ <div class="eyebrow" style="color:var(--teal);margin-bottom:18px"><span class="dot"></span>Próximos passos</div>
+ <h2 data-variant-show="A">Quer mapear esse mesmo motor para sua <span class="it">operação no Brasil</span>?</h2>
+ <h2 data-variant-show="B">Pronto pra um piloto <span class="it">de 8 semanas</span> que se paga sozinho?</h2>
+ <p class="lead">Discovery de 20 minutos. Sem pitch — só números, fluxos, integrações e o que dá pra fazer em um piloto fechado de 8–12 semanas.</p>
  <div class="cta-meta">
- <span>SOC 2</span><span>ISO 27001</span><span>GDPR · PDPA · LGPD-aligned</span><span>Sequoia · Coatue · Tiger Global</span>
+ <span>SOC 2</span><span>ISO 27001</span><span>GDPR · PDPA · aderente a LGPD</span><span>Sequoia · Coatue · Tiger Global</span>
  </div>
  </div>
  <div class="cta-actions">
- <a href="mailto:sales@airudder.com?subject=Discovery Banco Azteca — Brazil" class="cta-btn" data-track="cta.discovery_email">
- <span data-variant-show="A">Contact Sales — book a discovery</span>
- <span data-variant-show="B">Book an 8-week pilot →</span>
+ <a href="mailto:sales@airudder.com?subject=Discovery Banco Azteca — Brasil" class="cta-btn" data-track="cta.discovery_email">
+ <span data-variant-show="A">Falar com Vendas — agendar discovery</span>
+ <span data-variant-show="B">Agendar piloto de 8 semanas →</span>
  <span class="cta-arrow" data-variant-show="A">→</span>
  </a>
  <a href="https://airudder.com" class="cta-btn secondary" data-track="cta.visit_site">
- <span>See the platform · airudder.com</span>
+ <span>Ver plataforma · airudder.com</span>
  <span class="cta-arrow">↗</span>
  </a>
  </div>
@@ -3000,27 +3000,27 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <path d="M86.03 14.07C84.42 14.07 82.83 13.76 81.34 13.16C80.81 12.97 80.53 12.38 80.73 11.85C80.92 11.32 81.51 11.04 82.04 11.23C82.06 11.24 82.09 11.25 82.11 11.26C83.36 11.77 84.69 12.04 86.03 12.04C87.37 12.04 88.71 11.78 89.95 11.27C90.48 11.08 91.07 11.36 91.27 11.89C91.45 12.39 91.22 12.95 90.73 13.17C89.23 13.77 87.64 14.08 86.03 14.07ZM87.72 8.88H84.35C83.79 8.88 83.33 8.42 83.33 7.86C83.33 7.30 83.79 6.84 84.35 6.84H87.72C88.28 6.84 88.74 7.30 88.74 7.86C88.74 8.42 88.28 8.88 87.72 8.88ZM90.34 4.52C90.21 4.52 90.08 4.49 89.95 4.44C87.43 3.43 84.62 3.43 82.10 4.44C81.58 4.68 80.98 4.44 80.75 3.93C80.51 3.42 80.75 2.81 81.26 2.58C81.28 2.57 81.31 2.56 81.33 2.55C84.34 1.34 87.70 1.34 90.71 2.55C91.23 2.76 91.48 3.36 91.27 3.88C91.11 4.26 90.74 4.52 90.33 4.52H90.34Z"/>
  </svg>
  </div>
- <div class="foot-trust"><b>Compliance</b> · SOC 2 · ISO 27001 · GDPR · PDPA · IMDA · CSA · LGPD-aligned · Meta Official Business Partner</div>
+ <div class="foot-trust"><b>Compliance</b> · SOC 2 · ISO 27001 · GDPR · PDPA · IMDA · CSA · aderente a LGPD · Meta Official Business Partner</div>
  <div class="foot-trust" style="margin-top:6px">Backed by Sequoia · Coatue · Tiger Global</div>
  </div>
  <div class="foot-note" id="claims-note" tabindex="-1">
- <span class="claims-mark">*</span> Source notes — operational metrics (28K baseline, 500K+ calls/day, 100K+ users/day, 250K calls + 100K SMS/day) are drawn from the original Banco Azteca case study and accompanying public materials. The <b>4× ROI</b> figure is a <b>projected scenario — to be validated in discovery</b> against the prospect's real data; it is not an audited metric from the source case. Treat all numbers as illustrative outcomes rather than guarantees: pilot scope, integrations and KPIs must be validated per prospect. For Brazil deals, LGPD compliance, opt-in/opt-out handling, telemarketing rules (including 0303 prefixes and the Do Not Disturb registry), data residency and the DPA all require review by the client's legal and security teams. This document does not constitute legal advice.
+ <span class="claims-mark">*</span> Notas de origem — métricas operacionais (28K baseline, 500K+ chamadas/dia, 100K+ usuários/dia, 250K calls + 100K SMS/dia) extraídas do case study original do Banco Azteca e material público acompanhante. Indicador <b>4× ROI</b> é <b>cenário projetado · validar em discovery</b> com dados reais do prospect — não é métrica auditada do case original. Tratar todos os números como outcomes ilustrativos, não garantias; escopo de piloto, integrações e KPIs devem ser validados para cada prospect. Para deals BR, LGPD, opt-in/opt-out, regras de telemarketing (incluindo 0303 e Não Me Perturbe), residência de dados e DPA precisam de revisão pela área jurídica/security do cliente. Este documento não constitui aconselhamento jurídico.
  </div>
  <div class="foot-note" style="margin-top:14px;font-size:11px;opacity:.7">
- Brands mentioned — Banco Azteca, Itaú, Bradesco, Santander, Banco do Brasil, Caixa, Nubank, Inter, BTG, PicPay, Stone, C6 Bank, Vivo, TIM, Claro, Magalu, Casas Bahia, Mercado Livre, Renner, Porto, SulAmérica, Bradesco Seguros, Allianz, Mapfre, Atento, AeC, Konecta, Almaviva, CSU, Paschoalotto, Zenvia, Blip, Take, Meta, Pix, Ebanx, Sequoia, Coatue, Tiger Global — belong to their respective owners. Used here only for illustrative ICP and competitive-mapping purposes. No implied affiliation or endorsement.
+ Marcas mencionadas — Banco Azteca, Itaú, Bradesco, Santander, Banco do Brasil, Caixa, Nubank, Inter, BTG, PicPay, Stone, C6 Bank, Vivo, TIM, Claro, Magalu, Casas Bahia, Mercado Livre, Renner, Porto, SulAmérica, Bradesco Seguros, Allianz, Mapfre, Atento, AeC, Konecta, Almaviva, CSU, Paschoalotto, Zenvia, Blip, Take, Meta, Pix, Ebanx, Sequoia, Coatue, Tiger Global — pertencem aos respectivos titulares. Uso aqui apenas para fins ilustrativos de ICP e mapeamento competitivo. Sem afiliação implícita ou endosso.
  </div>
 
  <!-- ===== OG SHARE PREVIEW ===== -->
  <details class="og-preview">
  <summary>
- <span class="og-preview__lbl">Share preview</span>
- <span class="og-preview__hint">Open Graph · 1200×630 · click to expand</span>
+ <span class="og-preview__lbl">Preview de compartilhamento</span>
+ <span class="og-preview__hint">Open Graph · 1200×630 · clique para expandir</span>
  </summary>
  <div class="og-preview__body">
- <p class="og-preview__copy">Image used as the preview when this link is shared in Slack, Teams, WhatsApp, LinkedIn or email. Right-click the SVG below → <em>Save image as…</em> or use the <strong>Download SVG</strong> button. For Facebook/LinkedIn (which don't accept <code>data:</code> URIs), export to PNG and host on a CDN — update the <code>og:image</code> tag with the final URL.</p>
+ <p class="og-preview__copy">Imagem usada como preview ao compartilhar este link em Slack, Teams, WhatsApp, LinkedIn ou email. Clique direito no SVG abaixo → <em>Salvar imagem como…</em> ou use o botão <strong>Baixar SVG</strong>. Para Facebook/LinkedIn (que não aceitam <code>data:</code> URIs), exporte para PNG e hospede em CDN — atualize a tag <code>og:image</code> com a URL final.</p>
 
  <!-- The OG cover, rendered visually scaled-down at ~600px wide -->
- <svg id="ogCover" class="og-preview__img" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Rudder × Banco Azteca · from 28K to 500K+ daily calls · 17× scale">
+ <svg id="ogCover" class="og-preview__img" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Rudder × Banco Azteca · de 28K para 500K+ chamadas/dia · 17× scale">
  <defs>
  <linearGradient id="ogBg" x1="0%" y1="0%" x2="100%" y2="100%">
  <stop offset="0%" stop-color="#01213F"/>
@@ -3088,8 +3088,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <!-- 标题 — Fraunces 展示字体 -->
  <g font-family="Fraunces, Noto Serif SC, serif">
  <text x="64" y="290" fill="#fff" font-size="74" font-weight="300" letter-spacing="-.025em">From <tspan font-style="italic" font-weight="500" fill="#44C9C1">28K</tspan> to <tspan font-style="italic" font-weight="500" fill="#44C9C1">500K+</tspan></text>
- <text x="64" y="370" fill="#fff" font-size="74" font-weight="300" letter-spacing="-.025em">calls / day.</text>
- <text x="64" y="450" fill="#80B8E8" font-size="62" font-style="italic" font-weight="400" letter-spacing="-.025em">17× larger engine.</text>
+ <text x="64" y="370" fill="#fff" font-size="74" font-weight="300" letter-spacing="-.025em">chamadas / dia.</text>
+ <text x="64" y="450" fill="#80B8E8" font-size="62" font-style="italic" font-weight="400" letter-spacing="-.025em">Um motor 17× maior.</text>
  </g>
 
  <!-- 右侧 — 核心数据堆栈 -->
@@ -3102,15 +3102,15 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <g transform="translate(20,200)" font-family="Inter Tight, Noto Sans SC, sans-serif">
  <g>
  <circle cx="0" cy="0" r="3" fill="#44C9C1"/>
- <text x="14" y="5" fill="rgba(255,255,255,.85)" font-size="16"><tspan font-weight="700" fill="#fff">100K+</tspan> users reached / day</text>
+ <text x="14" y="5" fill="rgba(255,255,255,.85)" font-size="16"><tspan font-weight="700" fill="#fff">100K+</tspan> usuários alcançados / dia</text>
  </g>
  <g transform="translate(0,32)">
  <circle cx="0" cy="0" r="3" fill="#44C9C1"/>
- <text x="14" y="5" fill="rgba(255,255,255,.85)" font-size="16"><tspan font-weight="700" fill="#fff">4×</tspan> conversion ROI vs. baseline</text>
+ <text x="14" y="5" fill="rgba(255,255,255,.85)" font-size="16"><tspan font-weight="700" fill="#fff">4×</tspan> ROI de conversão vs. baseline</text>
  </g>
  <g transform="translate(0,64)">
  <circle cx="0" cy="0" r="3" fill="#44C9C1"/>
- <text x="14" y="5" fill="rgba(255,255,255,.85)" font-size="16"><tspan font-weight="700" fill="#fff">350K+</tspan> daily touchpoints (voice + SMS)</text>
+ <text x="14" y="5" fill="rgba(255,255,255,.85)" font-size="16"><tspan font-weight="700" fill="#fff">350K+</tspan> touchpoints diários (voz + SMS)</text>
  </g>
  </g>
  </g>
@@ -3126,11 +3126,11 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  </svg>
 
  <div class="og-preview__actions">
- <button class="og-btn" id="ogDownloadSvg" type="button">⤓ Download SVG (1200×630)</button>
- <button class="og-btn og-btn--secondary" id="ogCopyDataUri" type="button">⎘ Copy as data: URI</button>
+ <button class="og-btn" id="ogDownloadSvg" type="button">⤓ Baixar SVG (1200×630)</button>
+ <button class="og-btn og-btn--secondary" id="ogCopyDataUri" type="button">⎘ Copiar como data: URI</button>
  </div>
  <p class="og-preview__note">
- For rich preview on <strong>Facebook · LinkedIn</strong>, export this SVG to PNG (e.g.: <code>rsvg-convert -w 1200 og-cover.svg &gt; og-cover.png</code> or open in Figma → export 1×) and host at <code>airudder.com/case-studies/banco-azteca/og-cover.png</code>. <strong>Slack · Teams · WhatsApp · iMessage</strong> also respect OG crawl once the image is live.
+ Para preview rico em <strong>Facebook · LinkedIn</strong>, exporte este SVG para PNG (ex: <code>rsvg-convert -w 1200 og-cover.svg &gt; og-cover.png</code> ou abra no Figma → export 1×) e hospede em <code>airudder.com/case-studies/banco-azteca/og-cover.png</code>. <strong>Slack · Teams · WhatsApp · iMessage</strong> também respeitam o crawl OG após a imagem estar no ar.
  </p>
  </div>
  </details>
@@ -3138,23 +3138,23 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  <!-- ===== SAVE AS TEMPLATE ===== -->
  <details class="tmpl-widget">
  <summary>
- <span class="tmpl-widget__lbl">Save as template · generate new case study</span>
- <span class="tmpl-widget__hint">clone-and-rebrand for another prospect</span>
+ <span class="tmpl-widget__lbl">Salvar como template · gerar novo case study</span>
+ <span class="tmpl-widget__hint">clone-and-rebrand para outro prospect</span>
  </summary>
  <div class="tmpl-widget__body">
- <p class="tmpl-widget__intro">Use this case study as an <strong>editorial template</strong>. Fill in the fields below and click <strong>Generate HTML</strong> — downloads a standalone `.html` file with the client name, metrics and CTA replaced. <em>The generated file retains all features (theme, charts, ROI, FAQ).</em> Edit the rest manually in your editor.</p>
+ <p class="tmpl-widget__intro">Use este case study como <strong>template editorial</strong>. Preencha os campos abaixo e clique em <strong>Gerar HTML</strong> — baixa um arquivo `.html` independente com o nome do cliente, métricas e CTA substituídos. <em>O arquivo gerado mantém todos os recursos (tema, gráficos, ROI, FAQ).</em> Edite o resto manualmente no seu editor.</p>
 
  <form class="tmpl-form" id="tmplForm" onsubmit="return false;">
  <div class="tmpl-form__field is-full">
- <label for="tmpl-company">Client name</label>
- <input id="tmpl-company" type="text" placeholder="Ex: XPTO Bank" value="Banco Azteca">
- <small>replaces all mentions of "Banco Azteca"</small>
+ <label for="tmpl-company">Nome do cliente</label>
+ <input id="tmpl-company" type="text" placeholder="Ex: Banco XPTO" value="Banco Azteca">
+ <small>substitui todas as menções a "Banco Azteca"</small>
  </div>
 
  <div class="tmpl-form__field">
  <label for="tmpl-geo">geography</label>
- <input id="tmpl-geo" type="text" placeholder="Ex: Brazil · LatAm" value="Mexico · LatAm">
- <small>replaces "Mexico · LatAm" in hero meta</small>
+ <input id="tmpl-geo" type="text" placeholder="Ex: Brasil · LatAm" value="México · LatAm">
+ <small>substitui "México · LatAm" no hero meta</small>
  </div>
 
  <div class="tmpl-form__field">
@@ -3168,28 +3168,28 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  </div>
 
  <div class="tmpl-form__field">
- <label for="tmpl-baseline">Baseline (calls/day before)</label>
+ <label for="tmpl-baseline">Baseline (chamadas/dia antes)</label>
  <input id="tmpl-baseline" type="text" placeholder="Ex: 15K" value="28K">
  </div>
 
  <div class="tmpl-form__field">
- <label for="tmpl-baseline-full">Baseline · full format</label>
- <input id="tmpl-baseline-full" type="text" placeholder="Ex: 15,000" value="28,450">
- <small>appears in chart labels (number format)</small>
+ <label for="tmpl-baseline-full">Baseline · formato completo</label>
+ <input id="tmpl-baseline-full" type="text" placeholder="Ex: 15.000" value="28.450">
+ <small>aparece em legendas de gráfico (formato brasileiro)</small>
  </div>
 
  <div class="tmpl-form__field">
- <label for="tmpl-after">Post-AI capacity</label>
+ <label for="tmpl-after">Capacidade pós-AI</label>
  <input id="tmpl-after" type="text" placeholder="Ex: 200K+" value="500K+">
  </div>
 
  <div class="tmpl-form__field">
- <label for="tmpl-after-full">Capacity · full format</label>
- <input id="tmpl-after-full" type="text" placeholder="Ex: 200,000+" value="500,000+">
+ <label for="tmpl-after-full">Capacidade · formato completo</label>
+ <input id="tmpl-after-full" type="text" placeholder="Ex: 200.000+" value="500.000+">
  </div>
 
  <div class="tmpl-form__field">
- <label for="tmpl-scale">Scale multiplier</label>
+ <label for="tmpl-scale">Escala multiplicador</label>
  <input id="tmpl-scale" type="text" placeholder="Ex: 13×" value="17×">
  </div>
 
@@ -3199,45 +3199,45 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  </div>
 
  <div class="tmpl-form__field is-full">
- <label for="tmpl-ae-email">AE email</label>
+ <label for="tmpl-ae-email">Email do AE responsável</label>
  <input id="tmpl-ae-email" type="email" placeholder="your.name@airudder.com" value="sales@airudder.com">
- <small>replaces the "Book discovery" CTA to point to you</small>
+ <small>substitui o CTA "Agendar discovery" para apontar pra você</small>
  </div>
  </form>
 
  <div class="tmpl-widget__actions">
- <button class="og-btn" id="tmplGenerate" type="button" data-track="tmpl.generate">⤓ Generate HTML</button>
+ <button class="og-btn" id="tmplGenerate" type="button" data-track="tmpl.generate">⤓ Gerar HTML</button>
  <button class="og-btn og-btn--secondary" id="tmplReset" type="button" data-track="tmpl.reset">↺ Reset</button>
  </div>
 
  <p class="tmpl-widget__note">
- The generated HTML retains the styleguide and all components — you only need to revise specific copy (central quote, challenge narrative, prospect-specific integrations) in your editor. For 10+ variants, consider automating via Node.js using this HTML as a template (look for <code>data-tmpl</code> attributes in the future · TODO).
+ O HTML gerado mantém o styleguide e todos os componentes — você só precisa revisar copy específica (citação central, narrativa do desafio, integrações exatas do prospect) no seu editor. Para gerar 10+ variantes, considere automatizar via Node.js usando este HTML como template (busque por <code>data-tmpl</code> atributos no futuro · TODO).
  </p>
  </div>
  </details>
  </div>
  <div class="wrap foot-base">
- <span>© 2026 AI Rudder · Singapore HQ</span>
- <span class="foot-accent">CASE STUDY · v.2026 · EN</span>
+ <span>© 2026 AI Rudder · Singapura HQ</span>
+ <span class="foot-accent">CASE STUDY · v.2026 · PT-BR</span>
  <span>airudder.com</span>
  </div>
 </footer>
 
-<!-- Back to top — appears after hero scrolls out of view -->
-<a href="#main-content" class="back-top" id="backTop" aria-label="Back to top" data-track="nav.back_to_top">↑</a>
+<!-- Voltar ao topo — appears after hero scrolls out of view -->
+<a href="#main-content" class="back-top" id="backTop" aria-label="Voltar ao topo" data-track="nav.back_to_top">↑</a>
 
 <!-- Section nav chevrons — fixed-position prev/next arrows -->
-<nav class="section-nav section-nav--left" aria-label="Previous section">
- <button class="section-nav__btn" id="navPrev" type="button" aria-label="Go to previous section" data-track="nav.section_prev" disabled>‹<span class="section-nav__label" id="navPrevLabel">—</span></button>
+<nav class="section-nav section-nav--left" aria-label="Seção anterior">
+ <button class="section-nav__btn" id="navPrev" type="button" aria-label="Ir para seção anterior" data-track="nav.section_prev" disabled>‹<span class="section-nav__label" id="navPrevLabel">—</span></button>
 </nav>
-<nav class="section-nav section-nav--right" aria-label="Next section">
- <button class="section-nav__btn" id="navNext" type="button" aria-label="Go to next section" data-track="nav.section_next">›<span class="section-nav__label" id="navNextLabel">—</span></button>
+<nav class="section-nav section-nav--right" aria-label="Próxima seção">
+ <button class="section-nav__btn" id="navNext" type="button" aria-label="Ir para próxima seção" data-track="nav.section_next">›<span class="section-nav__label" id="navNextLabel">—</span></button>
 </nav>
 
 <!-- 悬浮 CTA — in概览区域滚出后from底部居中显示, CTA 区域进入视窗时隐藏 -->
-<a href="#section-cta" class="sticky-cta" id="stickyCta" data-track="cta.sticky_click" aria-label="Book a 20-minute discovery call" data-i18n-aria-label="sticky_cta.aria">
+<a href="#section-cta" class="sticky-cta" id="stickyCta" data-track="cta.sticky_click" aria-label="Agendar discovery de 20 minutos" data-i18n-aria-label="sticky_cta.aria">
  <span class="sticky-cta__pulse" aria-hidden="true"></span>
- <span data-i18n="sticky_cta.label">Book a discovery</span>
+ <span data-i18n="sticky_cta.label">Agendar discovery</span>
  <span class="sticky-cta__arrow" aria-hidden="true">→</span>
  <span class="sticky-cta__time" data-i18n="sticky_cta.time">20 MIN</span>
 </a>
@@ -3290,9 +3290,9 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  const donutCenterLbl = document.getElementById('donutCenterLbl');
  const donutDetail = document.getElementById('donutDetail');
  const channelData = {
- voice: { num: '250K', label: 'Voice calls / day', pct: '71.4%', detail: '<span class="badge">Voice</span> <span><b>/day 250,000+ calls</b>, via AI Voice Agent — predictive outbound with negotiation logic, payment promise and human-agent escalation. 71.4%. </span>' },
- sms: { num: '100K', label: 'SMS reminders / day', pct: '28.6%', detail: '<span class="badge">SMS</span> <span><b>/day 100,000+ SMS</b> — reminders synced with voice queue, with structured opt-in/opt-out mechanism, inBrazilreplaceable with WhatsApp Business via AI Chat Agent. </span>' },
- all: { num: '350K', label: 'daily touchpoints', detail: '<span class="badge">▸ INTERACT</span><span>click<b>Voice</b>or <b>SMS</b> isolate the channel and see the split. </span>' }
+ voice: { num: '250K', label: 'Chamadas de voz / day', pct: '71,4%', detail: '<span class="badge">Voice</span> <span><b>/day 250.000+ calls</b>, via AI Voice Agent — predictive outbound with negotiation logic, payment promise and human-agent escalation. 71,4%. </span>' },
+ sms: { num: '100K', label: 'Lembretes SMS / day', pct: '28,6%', detail: '<span class="badge">SMS</span> <span><b>/day 100.000+ SMS</b> — reminders synced with voice queue, with structured opt-in/opt-out mechanism, inBrazilreplaceable with WhatsApp Business via AI Chat Agent. </span>' },
+ all: { num: '350K', label: 'toques diários', detail: '<span class="badge">▸ INTERAGIR</span><span>click<b>Voice</b>or <b>SMS</b> isolate the channel and see the split. </span>' }
  };
  let activeChannel = null;
  const setChannel = (ch) => {
@@ -3324,9 +3324,9 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  const volBars = document.querySelectorAll('#chartVolume.bar-int');
  const volDetail = document.getElementById('volumeDetail');
  const volData = {
- before: '<span class="badge">baseline</span><span><b>28,450 calls</b> — traditional operation bounded by labor. high unit cost, equivalent to post--deploymentcapacity ~5.7%. </span>',
- after: '<span class="badge">AI post-deployment</span><span><b>500,000+ calls</b> — elastic capacity, no labor ceiling, per-campaign real-time analytics. scaleabout 17××. </span>',
- idle: '<span class="badge">▸ INTERACT</span><span>Hover over each bar to see the before/after operational context.</span>'
+ before: '<span class="badge">baseline</span><span><b>28.450 calls</b> — traditional operation bounded by labor. high unit cost, equivalent to post--deploymentcapacity ~5,7%. </span>',
+ after: '<span class="badge">AI post-deployment</span><span><b>500.000+ calls</b> — elastic capacity, no labor ceiling, per-campaign real-time analytics. scaleabout 17××. </span>',
+ idle: '<span class="badge">▸ INTERAGIR</span><span>Hover over each bar to see the before/after operational context.</span>'
  };
  volBars.forEach(b => {
  b.addEventListener('mouseenter', () => {
@@ -3344,13 +3344,13 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  const fitBars = document.querySelectorAll('#chartFit.bar-fit-group');
  const fitDetail = document.getElementById('fitDetail');
  const fitData = {
- tier1: '<span class="badge">95% · Tier-1 Banks</span><span><b>Itaú · Bradesco · Santander · BB · Caixa</b> — Banco Azteca direct proof: large-scale collections, regulatory proximity, CRM/core system integration. 1 calls to complete discovery. </span>',
- fintechs: '<span class="badge">92% · Fintechs</span><span><b>Nubank · Inter · BTG · PicPay · Stone · C6</b> — digital-first customer base, WhatsApp + voice collections, LGPD-aligned from the start. 8-week pilot.</span>',
- bpo: '<span class="badge">88% · BPO</span><span><b>Atento · AeC · Konecta · Almaviva · CSU · Paschoalotto · Algar Tech</b> — Margin compressed by labor cost; Azteca proves scale of 17× without expanding headcount× scale.</span>',
+ tier1: '<span class="badge">95% · Bancos Tier-1</span><span><b>Itaú · Bradesco · Santander · BB · Caixa</b> — Banco Azteca direct proof: large-scale collections, regulatory proximity, CRM/core system integration. 1 calls to complete discovery. </span>',
+ fintechs: '<span class="badge">92% · Fintechs</span><span><b>Nubank · Inter · BTG · PicPay · Stone · C6</b> — digital-first customer base, WhatsApp + voice collections, aderente a LGPD from the start. 8-week pilot.</span>',
+ bpo: '<span class="badge">88% · BPOs</span><span><b>Atento · AeC · Konecta · Almaviva · CSU · Paschoalotto · Algar Tech</b> — Margin compressed by labor cost; Azteca proves scale of 17× without expanding headcount× scale.</span>',
  telecom: '<span class="badge">80% · Telecom</span><span><b>Vivo · TIM · Claro</b> — collections, renewal, retention, installation confirmation. mandatory use of 0303 prefix and"Do Not Disturb"list.</span>',
- varejo: '<span class="badge">70% · Retail</span><span><b>Magalu · Casas Bahia · Mercado Livre · Renner · Riachuelo</b> — Own financing + recurring collections. Closed pilot recommended.</span>',
- seguros: '<span class="badge">65% · Insurance</span><span><b>Porto · SulAmérica · Bradesco Seg. · Zurich · Allianz · Mapfre</b> — renewal, premium reminders, active claims adjustment.</span>',
- idle: '<span class="badge">▸ INTERACT</span><span>Click a bar to see Brazilian target accounts in that sector.</span>'
+ varejo: '<span class="badge">70% · Varejo</span><span><b>Magalu · Casas Bahia · Mercado Livre · Renner · Riachuelo</b> — Own financing + recurring collections. Fechard pilot recommended.</span>',
+ seguros: '<span class="badge">65% · Seguros</span><span><b>Porto · SulAmérica · Bradesco Seg. · Zurich · Allianz · Mapfre</b> — renovação, lembrete de parcela, regulação ativa de sinistro.</span>',
+ idle: '<span class="badge">▸ INTERAGIR</span><span>Clique em uma barra para ver os accounts-alvo daquele setor no Brasil.</span>'
  };
  fitBars.forEach(g => {
  g.style.cursor = 'pointer';
@@ -3531,17 +3531,17 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  // full content translation is a separate content-team task. Add more keys + EN copy as needed.
  const i18n = {
  'zh-CN': {
- 'skip_to_content':'Skip to content',
- 'persona.prepared_for':'Prepared for',
- 'sticky_cta.label':'Book a discovery',
+ 'skip_to_content':'Pular para o conteúdo',
+ 'persona.prepared_for':'Preparado para',
+ 'sticky_cta.label':'Agendar discovery',
  'sticky_cta.time':'20 MIN',
- 'sticky_cta.aria':'Book a 20-minute discovery call',
+ 'sticky_cta.aria':'Agendar discovery de 20 minutos',
  'nav.live':'LIVE',
- 'nav.live_title':'In production · live deals across LATAM',
- 'nav.views_title':'Views this week',
- 'nav.read_title':'Estimated reading time',
- 'nav.download_aria':'Download as PDF',
- 'nav.download_title':'Download as PDF (Ctrl/Cmd+P)',
+ 'nav.live_title':'Em produção · deals ativos no LATAM',
+ 'nav.views_title':'Visualizações esta semana',
+ 'nav.read_title':'Tempo estimado de leitura',
+ 'nav.download_aria':'Baixar como PDF',
+ 'nav.download_title':'Baixar como PDF (Ctrl/Cmd+P)',
  'meta.read_suffix':' min read',
  'meta.views_suffix':'&nbsp;this week'
  },
@@ -3561,17 +3561,17 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  'meta.views_suffix':'&nbsp;esta semana'
  },
  'en': {
- 'skip_to_content':'Skip to content',
- 'persona.prepared_for':'Prepared for',
- 'sticky_cta.label':'Book a discovery',
+ 'skip_to_content':'Pular para o conteúdo',
+ 'persona.prepared_for':'Preparado para',
+ 'sticky_cta.label':'Agendar discovery',
  'sticky_cta.time':'20 MIN',
- 'sticky_cta.aria':'Book a 20-minute discovery call',
+ 'sticky_cta.aria':'Agendar discovery de 20 minutos',
  'nav.live':'LIVE',
- 'nav.live_title':'In production · live deals across LATAM',
- 'nav.views_title':'Views this week',
- 'nav.read_title':'Estimated reading time',
- 'nav.download_aria':'Download as PDF',
- 'nav.download_title':'Download as PDF (Ctrl/Cmd+P)',
+ 'nav.live_title':'Em produção · deals ativos no LATAM',
+ 'nav.views_title':'Visualizações esta semana',
+ 'nav.read_title':'Tempo estimado de leitura',
+ 'nav.download_aria':'Baixar como PDF',
+ 'nav.download_title':'Baixar como PDF (Ctrl/Cmd+P)',
  'meta.read_suffix':' min read',
  'meta.views_suffix':'&nbsp;this week'
  }
@@ -3657,7 +3657,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  entries.forEach(en => {
  if (en.isIntersecting && en.intersectionRatio > 0.1) {
  const idx = navSections.findIndex(s => s.id === en.target.id);
- if (idx !== -1 && Math.abs(en.boundingClientRect.top) < window.innerHeight * 0.5) {
+ if (idx !== -1 && Math.abs(en.boundingClienteRect.top) < window.innerHeight * 0.5) {
  navCurrentIdx = idx;
  updateChevrons();
  }
@@ -3708,11 +3708,11 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  });
  }
 
- // ===== Prospect personalization banner (URL-param driven) =====
+ // ===== Personalização do prospect banner (URL-param driven) =====
  // Accepts ?prospect=, ?prepared_by=, ?date= — all optional. Persists to localStorage so refresh keeps state.
  const personaBanner = document.getElementById('personaBanner');
  const personaCopy = document.getElementById('personaCopy');
- const personaClose = document.getElementById('personaClose');
+ const personaFechar = document.getElementById('personaFechar');
  const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const fmtDate = (iso) => {
  try {
@@ -3747,8 +3747,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  }
  }
  } catch(err){}
- if (personaClose) {
- personaClose.addEventListener('click', () => {
+ if (personaFechar) {
+ personaFechar.addEventListener('click', () => {
  if (personaBanner) personaBanner.classList.remove('is-active');
  try { sessionStorage.setItem('air-persona-dismissed','1'); } catch(e){}
  });
@@ -3792,7 +3792,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  new IntersectionObserver((entries) => {
  // pastSnapshot = true when the snapshot is no longer in view (above the viewport)
  entries.forEach(en => {
- pastSnapshot = en.boundingClientRect.bottom < 0;
+ pastSnapshot = en.boundingClienteRect.bottom < 0;
  });
  updateSticky();
  }, {rootMargin:'0px', threshold:0}).observe(snapshot);
@@ -3805,7 +3805,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  }
  }
 
- // ===== ROI calculator — live computation, brand-aware formatting =====
+ // ===== Calculadora de ROI — live computation, brand-aware formatting =====
  const roiInputs = {
  accounts: document.getElementById('roi-accounts'),
  attempts: document.getElementById('roi-attempts'),
@@ -3881,11 +3881,11 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  if (roiOut.total) roiOut.total.textContent = fmtBRLshort(total);
  if (roiOut.savings) roiOut.savings.textContent = fmtBRLshort(savings);
  if (roiOut.uplift) roiOut.uplift.textContent = fmtBRLshort(upliftValue);
- if (roiOut.aiCost) roiOut.aiCost.textContent = 'R$ 0.55';
+ if (roiOut.aiCost) roiOut.aiCost.textContent = 'R$ 0,55';
  if (roiOut.payback) roiOut.payback.textContent = paybackMonths >= 99 ? '—' : paybackMonths + ' months';
  if (roiOut.sub) {
  const pctRecovery = (newRecovery*100).toFixed(0);
- roiOut.sub.innerHTML = '<strong>' + fmtBRLshort(savings) + '</strong> operational cost savings + <strong>' + fmtBRLshort(upliftValue) + '</strong> Recovery uplift (recovery from ' + (R*100).toFixed(0) + '% rising to ' + pctRecovery + '%) . ';
+ roiOut.sub.innerHTML = '<strong>' + fmtBRLshort(savings) + '</strong> operational cost savings + <strong>' + fmtBRLshort(upliftValue) + '</strong> Uplift de recuperação (recovery from ' + (R*100).toFixed(0) + '% rising to ' + pctRecovery + '%) . ';
  }
  };
  // Wire all inputs
@@ -3920,8 +3920,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  const tmplDefaults = {
  'tmpl-company':'Banco Azteca','tmpl-geo':'México · LatAm',
  'tmpl-customers':'20M+','tmpl-headcount':'40K+',
- 'tmpl-baseline':'28K','tmpl-baseline-full':'28,450',
- 'tmpl-after':'500K+','tmpl-after-full':'500,000+',
+ 'tmpl-baseline':'28K','tmpl-baseline-full':'28.450',
+ 'tmpl-after':'500K+','tmpl-after-full':'500.000+',
  'tmpl-scale':'17×','tmpl-roi':'4×',
  'tmpl-ae-email':'sales@airudder.com'
  };
@@ -3979,12 +3979,12 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  [/<span class="hm-val">20M\+<\/span>/g, '<span class="hm-val">' + (get('tmpl-customers') || '20M+') + '</span>'],
  [/<span class="hm-val">40K\+<\/span>/g, '<span class="hm-val">' + (get('tmpl-headcount') || '40K+') + '</span>'],
  // Baseline / after — formatted versions (use word boundaries to avoid mangling)
- [/28,450/g, get('tmpl-baseline-full') || '28,450'],
- [/500,000\+/g, get('tmpl-after-full') || '500,000+'],
+ [/28.450/g, get('tmpl-baseline-full') || '28.450'],
+ [/500,000\+/g, get('tmpl-after-full') || '500.000+'],
  // ROI claim
  [/<strong>4× ROI/g, '<strong>' + (get('tmpl-roi') || '4×') + ' ROI'],
  [/<span class="num-pop">4×<\/span>/g, '<span class="num-pop">' + (get('tmpl-roi') || '4×') + '</span>'],
- // AE email
+ // Email do AE responsável
  [/sales@airudder\.com/g, get('tmpl-ae-email') || 'sales@airudder.com'],
  // Title + OG so social shares carry the new prospect name
  [/AI Rudder × Banco Azteca/g, 'AI Rudder × ' + company]
@@ -4104,7 +4104,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  setTimeout(() => { ogCopy.textContent = orig; ogCopy.classList.remove('is-copied'); }, 1800);
  } catch(err) {
  ogCopy.textContent = '⚠ Failed — use Ctrl/Cmd+C';
- setTimeout(() => { ogCopy.textContent = '⎘ Copy as data: URI'; }, 2400);
+ setTimeout(() => { ogCopy.textContent = '⎘ Copiar como data: URI'; }, 2400);
  }
  });
  }
@@ -4161,7 +4161,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
  sectionMap.forEach((_, id) => {
  const el = document.getElementById(id);
  if (!el || !visible.has(id)) return;
- const top = el.getBoundingClientRect().top;
+ const top = el.getBoundingClienteRect().top;
  if (top < window.innerHeight * 0.4 && top > -el.offsetHeight + 80) {
  if (top < bestTop) { bestTop = top; bestId = id; }
  }
