@@ -336,7 +336,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#024F94">
 <meta name="color-scheme" content="light">
 <title>AI Rudder × Banco Azteca — 一个催收业务如何变成 17× 更大的引擎</title>
@@ -1196,6 +1196,198 @@ footer.foot{background:var(--surface-dark);color:rgba(255,255,255,.6);padding:50
 
 /* Smooth scroll for anchors */
 html{scroll-behavior:smooth}
+
+/* =============================================================
+   MOBILE · TABLET · TOUCH · PERFORMANCE OPTIMIZATIONS
+   Added after all base styles so they override the desktop defaults.
+   Three breakpoints to target: phones (≤600px), tablets (601–1024px),
+   and a "touch device" axis (pointer: coarse) that applies regardless of size.
+   ============================================================= */
+
+/* ---- Touch targets (iOS HIG 44pt · Android 48dp minimums) ---- */
+@media (pointer: coarse) {
+  .nav-btn{width:44px;height:44px}
+  .nav-btn svg{width:18px;height:18px}
+  .lang-chip{height:38px;padding:4px}
+  .lang-chip__btn{height:30px;padding:0 11px;min-width:38px}
+  .toc-chip{padding:9px 14px 9px 12px;min-height:40px}
+  .roi-slider{height:8px;padding:14px 0;background-clip:content-box;-webkit-tap-highlight-color:transparent}
+  .roi-slider::-webkit-slider-thumb{width:28px;height:28px;border-width:4px}
+  .roi-slider::-moz-range-thumb{width:28px;height:28px;border-width:4px}
+  .roi-preset{padding:9px 14px;font-size:11px}
+  .faq-item summary{padding:20px 22px;min-height:56px}
+  .cta-btn{padding:20px 26px;min-height:56px}
+  .copyable{padding:6px 4px;margin:-6px -4px}/* hit-area expansion without visual shift */
+  .footnote-ref{padding:4px 6px;margin-left:0}
+  .og-btn{padding:11px 16px;min-height:42px}
+  .tmpl-form__field input{padding:12px 14px;min-height:44px;font-size:16px}/* font-size 16+ prevents iOS zoom-on-focus */
+  .tb-pill{height:44px;padding:0 16px 0 9px}
+  .tb-mark{width:30px;height:30px}
+  .tb-mark svg{width:30px;height:30px}
+  .persona-banner__close{width:30px;height:30px;font-size:16px}
+  .toc-menu a{padding:12px 14px;min-height:44px}
+  .back-top{width:48px;height:48px;font-size:20px}
+  .sticky-cta{padding:13px 20px 13px 16px;min-height:48px}
+}
+
+/* ---- Disable hover effects on touch-only devices (prevents sticky-hover bug) ---- */
+@media (hover: none) and (pointer: coarse) {
+  .nav-btn:hover,.toc-chip:hover,.tb-pill:hover,.outcome:hover,.chart-card:hover,
+  .copyable:hover,.faq-item summary:hover,.cta-btn:hover,.back-top:hover,
+  .sticky-cta:hover,.roi-preset:hover,.og-btn:hover,.toc-menu a:hover,
+  .section-nav__btn:hover,.tmpl-form__field input:hover,.prod:hover,
+  .donut-seg:hover,.bar-int:hover,.bar-fit:hover,.r-player:hover,.r-tog:hover,
+  .glass:hover{transform:none;filter:none}
+  /* Restore the underlying tap-feedback via :active */
+  .nav-btn:active,.toc-chip:active{background:color-mix(in srgb,var(--teal) 14%,transparent)}
+  .cta-btn:active,.og-btn:active,.roi-preset:active{transform:scale(.98)}
+  .outcome:active,.faq-item:active{background:color-mix(in srgb,var(--teal) 4%,transparent)}
+}
+
+/* ---- iPhone notch + home indicator safe-area handling ---- */
+.sticky-cta{bottom:calc(24px + env(safe-area-inset-bottom,0px))}
+.back-top{bottom:calc(24px + env(safe-area-inset-bottom,0px))}
+@media (max-width:600px){
+  .sticky-cta{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+  .back-top{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+}
+.persona-banner__in,.nav-in{padding-left:max(22px,env(safe-area-inset-left,0px));padding-right:max(22px,env(safe-area-inset-right,0px))}
+footer.foot{padding-bottom:calc(40px + env(safe-area-inset-bottom,0px))}
+
+/* ---- Phones (≤600px): drop hero h1 minimum + tighten typography ---- */
+@media (max-width:600px){
+  .hero h1{font-size:clamp(34px,9.5vw,52px);line-height:.98}
+  .hero{padding:40px 0 30px}
+  .hero-side{font-size:13px}
+  .hero-meta{margin-top:24px;gap:18px 24px;padding-top:18px}
+  .hero-meta .hm-val{font-size:18px}
+  .hero-meta .hm-key{font-size:9px}
+  .section-head h2{font-size:clamp(28px,7vw,42px);line-height:1.05}
+  .section-head .sec-num{font-size:54px}
+  .cgrid h2{font-size:clamp(26px,6.5vw,36px)}
+  .pull q{font-size:clamp(22px,5.5vw,30px);line-height:1.22}
+  .outcome{padding:28px 22px 22px}
+  .outcome .big{font-size:clamp(58px,15vw,86px)}
+  .outcome .outcome-lbl{font-size:15px;max-width:none}
+  .cta-section{padding:60px 0}
+  .cta-section h2{font-size:clamp(30px,7.5vw,46px)}
+  .briefing{padding:26px 22px}
+  .briefing .text{font-size:16px}
+  .faq-item summary{font-size:16px;gap:12px}
+  .faq-num{font-size:10px;padding:3px 6px}
+  .faq-body{padding:0 22px 20px 22px;font-size:14.5px}
+  .faq-body li{font-size:14px}
+  .roi-card{padding:24px 20px}
+  .roi-input__val{font-size:20px}
+  .roi-output{padding:24px 22px}
+  .roi-output__primary .val{font-size:clamp(40px,10vw,62px)}
+  .roi-stat .val{font-size:18px}
+  .toc-chip__name{display:none}
+  .nav-in{gap:8px;padding-top:9px;padding-bottom:9px}
+  .nav-meta{display:none}
+  /* Snapshot strip: 2-up before going single column */
+  .snap-grid{grid-template-columns:repeat(2,1fr)}
+  .snap-cell{padding:20px 18px}
+  .snap-cell:nth-child(odd){border-right:1px solid var(--line)}
+  .snap-cell:nth-child(even){border-right:none}
+  .snap-cell:nth-child(1),.snap-cell:nth-child(2){border-bottom:1px solid var(--line)}
+  .snap-cell:nth-child(3),.snap-cell:nth-child(4){border-bottom:none}
+  .snap-cell .snap-val{font-size:22px}
+  .snap-cell .snap-sub{font-size:12.5px}
+  /* Trust bar pill compaction */
+  .trust-bar{padding:24px 0}
+  .badge-row{gap:8px}
+  .tb-lbl small{display:none}/* drop the sub-label on phones to save space */
+  /* Brazil section grid → 1 col */
+  .brazil .cgrid + div{grid-template-columns:1fr !important;gap:0 !important}
+  .brazil-bullet{flex-direction:column;gap:6px;padding:14px 0}
+  .brazil-bullet .seg{width:auto;font-size:16px}
+  /* Pull-quote watermark smaller */
+  .pull::before{font-size:140px;top:-12px}
+  /* CTA stacked */
+  .cta-grid{gap:24px}
+  .cta-actions{gap:12px}
+  /* Persona banner cleaner */
+  .persona-banner__copy{font-size:13px}
+  .persona-banner__tag{font-size:9px;padding:3px 7px}
+  /* Pad mobile chart-card more */
+  .chart-card{padding:20px 16px 18px}
+  /* Chart-detail-bar legibility */
+  .chart-detail-bar{font-size:12.5px;flex-direction:column;align-items:flex-start;gap:6px}
+  .chart-detail-bar .badge{font-size:9px}
+  /* Reading progress bar — slightly thicker on small screens for visibility */
+  .read-progress{height:3px}
+  /* Larger persona close button hit area */
+  .persona-banner__close{width:32px;height:32px}
+}
+
+/* ---- Very narrow (≤360px) — iPhone SE 1st gen, small Android ---- */
+@media (max-width:360px){
+  .wrap{padding:0 16px}
+  .nav-in{padding:9px 16px}
+  .hero h1{font-size:clamp(30px,9vw,42px)}
+  .hero-meta{grid-template-columns:1fr 1fr;gap:14px 18px}
+  .outcome .big{font-size:64px}
+  .toc-chip__num{display:none}
+  .nav-actions{gap:3px}
+  .nav-btn{width:40px;height:40px}
+}
+
+/* ---- Tablets / iPad portrait (601–1024px portrait) ---- */
+@media (min-width:601px) and (max-width:1024px) and (orientation:portrait){
+  .wrap{max-width:860px;padding:0 32px}
+  .hero h1{font-size:clamp(46px,7.5vw,76px)}
+  .outcome-grid{grid-template-columns:1fr 1fr}
+  .outcome-grid .outcome:nth-child(3){grid-column:1/-1}
+  .cgrid{grid-template-columns:1fr;gap:24px}
+  .roi-grid{grid-template-columns:1fr;gap:26px}
+  .radar-grid{grid-template-columns:1fr;gap:26px}
+}
+
+/* ---- iPad landscape (1025–1180px) — keep desktop layout but tighten ---- */
+@media (min-width:1025px) and (max-width:1180px){
+  .wrap{padding:0 32px}
+  .hero h1{font-size:clamp(58px,7vw,96px)}
+}
+
+/* ---- PERFORMANCE: disable expensive GPU effects on phones ---- */
+@media (max-width:768px){
+  /* SVG turbulence grain is the single most expensive paint — kill it on phones */
+  .grain{display:none}
+  /* Radar mesh blurs run at 80px which is brutal on mobile GPUs */
+  .radar-bg .mesh{filter:blur(40px);opacity:.35}
+  .radar-bg .m3{display:none}
+  /* Hero radial-gradient glows lighter */
+  .hero::before,.hero::after{filter:blur(10px)}
+  /* CTA section outer rings — drop one to lighten paint */
+  .cta-section::after{display:none}
+  /* Outcome cards: reduce shadow */
+  .outcome,.chart-card,.briefing{box-shadow:0 8px 20px -10px rgba(2,79,148,.18)}
+}
+
+/* ---- Below-the-fold render deferral (Chromium ≥85, Safari 18+) ---- */
+section[id^="section-"]:not(#section-hero):not(#section-trust){content-visibility:auto;contain-intrinsic-size:auto 800px}
+@media (max-width:600px){
+  section[id^="section-"]:not(#section-hero){content-visibility:auto;contain-intrinsic-size:auto 600px}
+}
+
+/* ---- Smooth touch interactions ---- */
+.nav-btn,.toc-chip,.cta-btn,.og-btn,.roi-preset,.lang-chip__btn,.persona-banner__close,
+.tb-pill,.faq-item summary,.toc-menu a,.dn-leg-row,.copyable,.back-top,.sticky-cta,
+.section-nav__btn,.donut-seg,.bar-int,.bar-fit-group,.r-player,.r-tog,
+.roi-slider{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+
+/* ---- iOS Safari: prevent zoom on form focus (fields ≥16px already in mobile block) ---- */
+input,textarea,select{font-size:max(16px,1em)}
+@media (min-width:601px){input,textarea,select{font-size:inherit}}
+
+/* ---- Landscape phones: tame the hero vertical ---- */
+@media (max-height:500px) and (orientation:landscape){
+  .hero{padding:30px 0 20px}
+  .hero h1{font-size:clamp(36px,7vw,60px);line-height:.96}
+  .hero-grid{grid-template-columns:1.5fr 1fr;gap:30px;align-items:start}
+  .persona-banner{display:none}/* don't eat precious vertical space */
+}
 
 /* PRINT — optimized for PDF export (A4 / Letter)
    Force light theme tokens in print so PDFs always look professional, even if the user is in dark mode */
