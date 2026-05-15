@@ -736,12 +736,26 @@ header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--c
 .tb-lbl small{display:block;font-size:8.5px;color:var(--muted);font-weight:500;letter-spacing:.1em;margin-top:2px;text-transform:uppercase}
 
 /* Brand variants — keep brand recognition while sharing the shell */
-.tb-meta{background:var(--brand-meta-bg);border-color:rgba(255,255,255,.08);box-shadow:0 8px 20px -8px rgba(2,79,148,.35),inset 0 1px 0 rgba(255,255,255,.05);padding-right:16px}
+.tb-meta{background:var(--brand-meta-bg);border-color:rgba(255,255,255,.08);box-shadow:0 8px 22px -8px rgba(8,102,255,.35),inset 0 1px 0 rgba(255,255,255,.06);padding:0 18px 0 12px;overflow:hidden}
 .tb-meta::after{border-color:rgba(255,255,255,.04)}
-.tb-meta .tb-lbl{color:#fff;font-family:"Inter Tight","Noto Sans SC",sans-serif;font-size:11px;letter-spacing:.02em;text-transform:none}
-.tb-meta .tb-lbl b{font-weight:700;font-size:13px;display:block;line-height:1;margin-bottom:1px}
-.tb-meta .tb-lbl small{color:rgba(255,255,255,.7);font-size:8.5px;letter-spacing:.05em;font-family:"Inter Tight","Noto Sans SC",sans-serif;text-transform:none}
-.tb-meta:hover{box-shadow:0 14px 28px -10px rgba(2,79,148,.45),inset 0 1px 0 rgba(255,255,255,.05)}
+/* Premium glow that hints at the Meta blue gradient seeping through */
+.tb-meta::before{content:"";position:absolute;left:0;top:0;bottom:0;width:62px;background:radial-gradient(ellipse at 30% 50%,rgba(8,102,255,.22) 0%,rgba(85,59,217,.08) 55%,transparent 80%);border-radius:20px 0 0 20px;pointer-events:none;z-index:0}
+/* Meta lemniscate is wider than tall (aspect ~5:3) — give it horizontal room */
+.tb-meta__mark{width:46px;height:28px;position:relative;z-index:1}
+.tb-meta__mark svg{width:46px;height:28px;display:block;filter:drop-shadow(0 0 8px rgba(8,102,255,.35))}
+.tb-meta .tb-lbl{color:#fff;font-family:"Inter Tight","Noto Sans SC",sans-serif;font-size:11px;letter-spacing:-.005em;text-transform:none;line-height:1.05;position:relative;z-index:1}
+.tb-meta .tb-lbl b{font-weight:800;font-size:15px;display:block;line-height:1;margin-bottom:2px;letter-spacing:-.025em;color:#fff;font-feature-settings:"ss01" on}
+.tb-meta .tb-lbl small{color:rgba(255,255,255,.74);font-size:9.5px;letter-spacing:.015em;font-family:"Inter Tight","Noto Sans SC",sans-serif;text-transform:none;font-weight:500;display:block;line-height:1.1;margin-top:1px}
+.tb-meta:hover{box-shadow:0 16px 32px -10px rgba(8,102,255,.48),inset 0 1px 0 rgba(255,255,255,.08);transform:translateY(-2px)}
+.tb-meta:hover .tb-meta__mark svg{filter:drop-shadow(0 0 14px rgba(8,102,255,.55))}
+@media (pointer:coarse){
+  .tb-meta__mark{width:50px;height:30px}
+  .tb-meta__mark svg{width:50px;height:30px}
+  .tb-meta .tb-lbl b{font-size:16px}
+  .tb-meta .tb-lbl small{font-size:10px}
+}
+/* Don't drop the sub-label on phones — "Business Partner" carries the brand value */
+@media (max-width:600px){.tb-meta .tb-lbl small{display:block !important}}
 
 .tb-pix .tb-lbl{font-family:"Inter Tight","Noto Sans SC",sans-serif;font-size:12px;text-transform:none;letter-spacing:.02em;font-weight:700}
 .tb-pix .tb-lbl small{font-family:"JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase}
@@ -1803,21 +1817,37 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,.donut-seg:focus-v
       经审计、受监管、<br>支持全球规模化集成
     </div>
     <div class="badge-row">
-      <!-- Meta 官方业务合作伙伴 -->
-      <div class="tb-pill tb-meta" aria-label="Meta 官方业务合作伙伴">
-        <span class="tb-mark">
-          <svg viewBox="0 0 30 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Meta Business Partner — official badge style (light pill, brand-accurate infinity mark) -->
+      <div class="tb-pill tb-meta" aria-label="Meta Business Partner">
+        <span class="tb-mark tb-meta__mark">
+          <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <defs>
-              <linearGradient id="metaInf" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#00C6FF"/>
-                <stop offset="50%" stop-color="#0082FB"/>
-                <stop offset="100%" stop-color="#0866FF"/>
+              <!-- Front ribbon: classic Meta cyan→blue→indigo gradient -->
+              <linearGradient id="metaFront" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#00DFD8"/>
+                <stop offset="35%" stop-color="#0095F6"/>
+                <stop offset="70%" stop-color="#0866FF"/>
+                <stop offset="100%" stop-color="#553BD9"/>
+              </linearGradient>
+              <!-- Back ribbon: slightly desaturated to suggest depth at the crossover -->
+              <linearGradient id="metaBack" x1="100%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#553BD9"/>
+                <stop offset="50%" stop-color="#0866FF"/>
+                <stop offset="100%" stop-color="#0082FB"/>
               </linearGradient>
             </defs>
-            <path d="M 6 9 C 6 4, 11 2, 14 6 C 16 8.5, 17 9, 18 9 C 19 9, 20 8.5, 22 6 C 25 2, 30 4, 30 9 C 30 14, 25 16, 22 12 C 20 9.5, 19 9, 18 9 C 17 9, 16 9.5, 14 12 C 11 16, 6 14, 6 9 Z" fill="url(#metaInf)"/>
+            <!-- Back ribbon (right loop) — drawn first so the left ribbon visually passes "over" it -->
+            <path d="M 50 30 C 62 4, 86 8, 86 50"
+              fill="none" stroke="url(#metaBack)" stroke-width="17" stroke-linecap="round"/>
+            <!-- Front ribbon (left loop) — overlaps at the center crossover, creating the 3D weave -->
+            <path d="M 14 50 C 14 8, 38 4, 50 30"
+              fill="none" stroke="url(#metaFront)" stroke-width="17" stroke-linecap="round"/>
+            <!-- Subtle highlight at the front-ribbon apex to give it a ribbon-like depth -->
+            <path d="M 22 28 C 24 18, 32 14, 40 18"
+              fill="none" stroke="rgba(255,255,255,.18)" stroke-width="4" stroke-linecap="round"/>
           </svg>
         </span>
-        <span class="tb-lbl"><b>Meta</b><small>官方业务合作伙伴</small></span>
+        <span class="tb-lbl"><b>Meta</b><small>Business Partner</small></span>
       </div>
 
       <!-- Pix（巴西即时支付）-->
